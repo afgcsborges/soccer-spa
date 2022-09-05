@@ -4,6 +4,7 @@ import { get, groupBy, isEmpty, orderBy } from 'lodash'
 
 import PropTypes from 'prop-types'
 import Select from 'components/select'
+import StandingsTable from 'containers/standings-table'
 import axios from 'axios'
 import logo from '../../logo.svg'
 
@@ -16,8 +17,7 @@ const Home = ({ apiKey }) => {
     const [seasonData, setSeasonData] = useState([])
     const [seasonOptions, setSeasonOptions] = useState([])
     const [selectedSeason, setSelectedSeason] = useState({})
-
-    console.log(selectedSeason)
+    const [tableData, setTableData] = useState([])
 
     useEffect(() => {
         axios
@@ -59,18 +59,39 @@ const Home = ({ apiKey }) => {
         }
     }, [seasonOptions])
 
+    useEffect(() => {
+        if (isEmpty(selectedSeason)) {
+            setTableData([])
+        } else {
+            axios
+                .get(`https://soccer.sportmonks.com/api/v2.0/standings/season/${selectedSeason}`, {
+                    params: { api_token: apiKey }
+                })
+                .then(res => setTableData(res.data.data))
+                .catch(err => {
+                    console.log(err.message)
+                })
+        }
+    }, [selectedSeason])
+
     return (
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <Select options={leagueOptions} showSearch onChange={setSelectedLeague} placeholder={'Please select a league.'}/>
-                    <Select
-                        disabled={isEmpty(selectedLeague) || isEmpty(seasonOptions)}
-                        placeholder={'Please select a league first in order to select a season.'}
-                        options={seasonOptions}
-                        value={selectedSeason}
-                        onChange={setSelectedSeason}
-                    />
+                <Select
+                    options={leagueOptions}
+                    showSearch
+                    onChange={setSelectedLeague}
+                    placeholder={'Please select a league.'}
+                />
+                <Select
+                    disabled={isEmpty(selectedLeague) || isEmpty(seasonOptions)}
+                    placeholder={'Please select a league first in order to select a season.'}
+                    options={seasonOptions}
+                    value={selectedSeason}
+                    onChange={setSelectedSeason}
+                />
+                <StandingsTable tableData={tableData} />
             </header>
         </div>
     )
