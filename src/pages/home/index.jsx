@@ -17,49 +17,60 @@ const Home = ({ apiKey }) => {
     const [seasonOptions, setSeasonOptions] = useState([])
     const [selectedSeason, setSelectedSeason] = useState({})
 
-    console.log(selectedLeague)
     console.log(selectedSeason)
 
     useEffect(() => {
-        axios.get('https://soccer.sportmonks.com/api/v2.0/leagues', { params: {api_token: apiKey}})
-           .then(res => setLeagueData(res.data.data))
-           .catch((err) => {
-              console.log(err.message);
-           })
-        axios.get('https://soccer.sportmonks.com/api/v2.0/seasons', { params: {api_token: apiKey}})
-           .then(res => setSeasonData(groupBy(res.data.data, 'league_id')))
-           .catch((err) => {
-              console.log(err.message);
-           })
-     }, [])
+        axios
+            .get('https://soccer.sportmonks.com/api/v2.0/leagues', { params: { api_token: apiKey } })
+            .then(res => setLeagueData(res.data.data))
+            .catch(err => {
+                console.log(err.message)
+            })
+        axios
+            .get('https://soccer.sportmonks.com/api/v2.0/seasons', { params: { api_token: apiKey } })
+            .then(res => setSeasonData(groupBy(res.data.data, 'league_id')))
+            .catch(err => {
+                console.log(err.message)
+            })
+    }, [])
 
     useEffect(() => {
-        setLeagueOptions(leagueData.map(league => ({ key: league.id, label: league.name})))
-    }, [leagueData]);
+        setLeagueOptions(leagueData.map(league => ({ key: league.id, label: league.name })))
+    }, [leagueData])
 
     useEffect(() => {
-        if(isEmpty(selectedLeague)) {
-            setSeasonOptions({})
+        if (isEmpty(selectedLeague)) {
+            setSeasonOptions([])
         } else {
-            setSeasonOptions(orderBy(get(seasonData, selectedLeague, []),'id', 'desc').map(season => ({ key: season.id, label: season.name})))
+            setSeasonOptions(
+                orderBy(get(seasonData, selectedLeague, []), 'id', 'desc').map(season => ({
+                    key: season.id,
+                    label: season.name
+                }))
+            )
         }
-    }, [selectedLeague]);
+    }, [selectedLeague])
 
     useEffect(() => {
-        if(isEmpty(seasonOptions)) {
-            setSelectedSeason('')
+        if (isEmpty(seasonOptions)) {
+            setSelectedSeason(null)
         } else {
-            setSelectedSeason(seasonOptions[FIRST_ELEMENT].key || '')
+            setSelectedSeason(`${seasonOptions[FIRST_ELEMENT].key}` || null)
         }
-    }, [seasonOptions]);
+    }, [seasonOptions])
 
     return (
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <Select options={leagueOptions} showSearch onChange={setSelectedLeague} />
-                {selectedLeague && !isEmpty(seasonOptions) && <Select options={seasonOptions} defaultValue={seasonOptions[FIRST_ELEMENT].label} onChange={setSelectedSeason}/>}
-                
+                <Select options={leagueOptions} showSearch onChange={setSelectedLeague} placeholder={'Please select a league.'}/>
+                    <Select
+                        disabled={isEmpty(selectedLeague) || isEmpty(seasonOptions)}
+                        placeholder={'Please select a league first in order to select a season.'}
+                        options={seasonOptions}
+                        value={selectedSeason}
+                        onChange={setSelectedSeason}
+                    />
             </header>
         </div>
     )
