@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+/* eslint-disable no-console */
 import './App.css'
 
 import Home from 'pages/home'
