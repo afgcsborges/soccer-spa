@@ -46,3 +46,25 @@ export const getTopScorers = (apiKey, setTopScorersData, selectedSeason) => {
             logError(err)
         })
 }
+
+export const getTeamPlayers = (apiKey, setTeamPlayers, selectedTeam) => {
+    axios
+        .get(`https://soccer.sportmonks.com/api/v2.0/teams/${selectedTeam}?include=squad.player`, {
+            params: { api_token: apiKey }
+        })
+        .then(res => setTeamPlayers(res.data.data))
+        .catch(err => {
+            logError(err)
+        })
+}
+
+export const getVenue = (apiKey, setVenue, venueId) => {
+    axios
+        .get(`https://soccer.sportmonks.com/api/v2.0/venues/${venueId}`, {
+            params: { api_token: apiKey }
+        })
+        .then(res => setVenue(res.data.data))
+        .catch(err => {
+            logError(err)
+        })
+}

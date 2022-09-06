@@ -12,7 +12,7 @@ const FIRST_ELEMENT = 0
 const Home = ({ apiKey }) => {
     const [leagueData, setLeagueData] = useState([])
     const [leagueOptions, setLeagueOptions] = useState([])
-    const [selectedLeague, setSelectedLeague] = useState({})
+    const [selectedLeague, setSelectedLeague] = useState(null)
     const [seasonData, setSeasonData] = useState([])
     const [seasonOptions, setSeasonOptions] = useState([])
     const [selectedSeason, setSelectedSeason] = useState(null)
@@ -61,33 +61,34 @@ const Home = ({ apiKey }) => {
     }, [selectedSeason])
 
     return (
-        <div className="App" >
-                {selectedTeam ? (
-                    <>
-                        <TeamLayout onButtonClick={() => setSelectedTeam(null)} />
-                    </>
-                ) : (
-                    <>
-                        <Select
-                            options={leagueOptions}
-                            showSearch
-                            onChange={setSelectedLeague}
-                            placeholder={'Please select a league.'}
-                        />
-                        <Select
-                            disabled={isEmpty(selectedLeague) || isEmpty(seasonOptions)}
-                            placeholder={'Please select a league first in order to select a season.'}
-                            options={seasonOptions}
-                            value={selectedSeason}
-                            onChange={setSelectedSeason}
-                        />
-                        <StandingsTable
-                            standingsData={standingsData}
-                            topScorersData={topScorersData}
-                            handleNameClick={setSelectedTeam}
-                        />
-                    </>
-                )}
+        <div className="App">
+            {selectedTeam ? (
+                <>
+                    <TeamLayout apiKey={apiKey} onButtonClick={() => setSelectedTeam(null)} teamId={selectedTeam} />
+                </>
+            ) : (
+                <>
+                    <Select
+                        options={leagueOptions}
+                        showSearch
+                        value={selectedLeague}
+                        onChange={setSelectedLeague}
+                        placeholder={'Please select a league.'}
+                    />
+                    <Select
+                        disabled={isEmpty(selectedLeague) || isEmpty(seasonOptions)}
+                        placeholder={'Please select a league first in order to select a season.'}
+                        options={seasonOptions}
+                        value={selectedSeason}
+                        onChange={setSelectedSeason}
+                    />
+                    <StandingsTable
+                        standingsData={standingsData}
+                        topScorersData={topScorersData}
+                        handleNameClick={setSelectedTeam}
+                    />
+                </>
+            )}
         </div>
     )
 }

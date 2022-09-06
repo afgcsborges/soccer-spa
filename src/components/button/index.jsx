@@ -18,7 +18,6 @@ const StyledButton = styled(AntdButton)`
         padding: 8px;
         float: right;
         margin-bottom: 10px;
-        
 
         &:not([disabled]) {
             background-color: 'transparent';
@@ -61,11 +60,7 @@ const StyledButton = styled(AntdButton)`
     }
 `
 
-const Button = ({ label, onClick,  }) => (
-    <StyledButton onClick={onClick} >
-        {label}
-    </StyledButton>
-)
+const Button = ({ label, onClick }) => <StyledButton onClick={onClick}>{label}</StyledButton>
 
 Button.defaultProps = {
     iconPosition: 'left',

@@ -144,7 +144,6 @@ const Select = ({
     strong
 }) => {
     /* istanbul ignore next */
-    console.log(value)
     const delayedOnSearch = onSearch
         ? useCallback(
               debounce(val => onSearch(val), DEBOUNCE_TIME),
@@ -275,10 +274,7 @@ Select.propTypes = {
     size: PropTypes.oneOf(['large', 'middle', 'small']),
     strong: PropTypes.bool,
     /** Current selected option */
-    value: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number
-    ])
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default Select
