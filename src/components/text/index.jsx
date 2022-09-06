@@ -97,6 +97,7 @@ const StyledText = styled.span`
     max-width: 100%;
     display: inline-block;
 
+    ${({ minWidth }) => (minWidth ? `min-width: ${minWidth};` : null)}
     ${({ ellipsis }) =>
         ellipsis
             ? `
@@ -118,7 +119,8 @@ const Text = ({
     type,
     underline,
     italic,
-    weight
+    weight,
+    minWidth
 }) => (
     <StyledText
         className={className}
@@ -126,6 +128,7 @@ const Text = ({
         color={color}
         disabled={disabled}
         ellipsis={ellipsis}
+        minWidth={minWidth}
         level={level}
         strong={strong}
         title={label}
@@ -185,6 +188,7 @@ Text.propTypes = {
      * Set content importance
      */
     level: PropTypes.oneOf([1, 2, 3]),
+    minWidth: PropTypes.string,
     /**
      * Bold style
      */
