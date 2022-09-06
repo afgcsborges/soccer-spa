@@ -28,7 +28,9 @@ const Table = ({
     showHeader,
     smallFrame,
     onRow,
-    transparent
+    transparent,
+    footer,
+    header
 }) => (
     <StyledTableContainer>
         <GlobalStyledTable />
@@ -47,6 +49,8 @@ const Table = ({
             smallFrame={smallFrame}
             onRow={onRow}
             transparent={transparent}
+            footer={footer}
+            title={header}
         />
     </StyledTableContainer>
 )
@@ -82,6 +86,8 @@ export const TableProps = {
     dataTest: PropTypes.string,
     /** Customize empty text */
     emptyText: PropTypes.string,
+    footer: PropTypes.func,
+    header: PropTypes.func,
     /** Weather the row first item should be justified to the left (matching the others first row items justification) or not */
     justifiedLeftRow: PropTypes.bool,
     /** Controls table loading state */
