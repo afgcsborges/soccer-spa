@@ -57,6 +57,12 @@ const PlayerProfile = ({ apiKey, onClose, playerId }) => {
                                 textAlign="start"
                             />
                             <DisplayBox
+                                label={'Nationality:'}
+                                value={get(playerInfo, 'nationality') || '-'}
+                                minWidth={'100px'}
+                                textAlign="start"
+                            />
+                            <DisplayBox
                                 label={'Team:'}
                                 value={get(playerInfo, 'team.data.name') || '-'}
                                 minWidth={'100px'}
