@@ -1,7 +1,6 @@
-/* eslint-disable sort-keys */
 import React, { useEffect, useState } from 'react'
-
 import { get, groupBy, isEmpty } from 'lodash'
+
 import PropTypes from 'prop-types'
 import Select from 'components/select'
 import Space from 'components/space'
@@ -46,7 +45,6 @@ const playedColumn = () => ({
     sorter: (a, b) => a.played - b.played,
     title: <Text strong label={'Played'} level={2} />
 })
-
 const wonColumn = () => ({
     align: 'center',
     dataIndex: 'won',
@@ -63,7 +61,6 @@ const drawColumn = () => ({
     sorter: (a, b) => a.draw - b.draw,
     title: <Text strong label={'Draw'} level={2} />
 })
-
 const lostColumn = () => ({
     align: 'center',
     dataIndex: 'lost',
@@ -127,7 +124,6 @@ const assistsColumn = () => ({
     sorter: (a, b) => a.assists - b.assists,
     title: <Text strong label={'Assists'} level={2} />
 })
-
 const getStandingsColumns = onNameClick => [
     positionColumn(),
     teamNameColumn(onNameClick),
@@ -147,32 +143,39 @@ const getTopScorersColumns = () => [
     penaltyColumn(),
     assistsColumn()
 ]
-const mapLeagueLines = (data, isGroup) =>
-    data.map(_ => ({
-        difference: _.total?.goal_difference || ZERO,
-        draw: _.overall?.draw,
-        goal: `${_.overall?.goals_scored}-${_.overall?.goals_against}`,
-        lost: _.overall?.lost,
-        played: _.overall?.games_played,
-        points: _.points,
-        position: isGroup ? `${_.group_name} | ${_.position}` : _.position,
-        positionSorter: _.position,
-        scored: _.overall?.goals_scored,
-        teamId: _.team_id,
-        teamName: _.team_name,
-        won: _.overall?.won
-    }))
 
-const mapStandingsData = (data, stage) => {
-    const stageData = data?.find(_ => `${_.id}` === stage)?.standings?.data
+const mapLeagueRows = (data, isGroup) =>
+    data.map(leagueRow => ({
+        difference: get(leagueRow, 'total.goal_difference') || ZERO,
+        draw: get(leagueRow, 'overall.draw'),
+        goal: `${get(leagueRow, 'overall.goals_scored')}-${get(leagueRow, 'overall.goals_against')}`,
+        lost: get(leagueRow, 'overall.lost'),
+        played: get(leagueRow, 'overall.games_played'),
+        points: get(leagueRow, 'points'),
+        position: isGroup
+            ? `${get(leagueRow, 'group_name')} | ${get(leagueRow, 'position')}`
+            : get(leagueRow, 'position'),
+        positionSorter: leagueRow.position,
+        scored: get(leagueRow, 'overall.goals_scored'),
+        teamId: get(leagueRow, 'team_id'),
+        teamName: get(leagueRow, 'team_name'),
+        won: get(leagueRow, 'overall.won')
+    }))
+const mapStandingsData = (data, selectedStage) => {
+    const stageData =
+        get(
+            data?.find(stage => `${stage.id}` === selectedStage),
+            'standings.data'
+        ) || []
+    if (isEmpty(stageData)) return []
     if (stageData[ZERO].resource === 'group') {
         const result = []
         stageData.forEach(group => {
-            result.push(mapLeagueLines(group.standings.data, true))
+            result.push(mapLeagueRows(group.standings.data, true))
         })
         return result.flat()
     }
-    return mapLeagueLines(stageData, false)
+    return mapLeagueRows(stageData, false)
 }
 
 const mapTopScorersData = (groupedGoalScorers, assistsScorers, stage) => {
@@ -205,16 +208,18 @@ const StandingsTable = ({ handleNameClick, standingsData, topScorersData }) => {
     const [stage, setStage] = useState(null)
     const [stageOptions, setStageOptions] = useState([])
     const [groupedGoalScorers, setGroupedGoalScorers] = useState({})
-    const hadleToggle = () => {
-        if (toggle) {
-            setToggle(false)
-        } else {
-            setToggle(true)
-        }
+    const handleToggle = () => {
+        if (toggle) setToggle(false)
+        else setToggle(true)
     }
     const getTableHeader = () => (
         <Space>
-            <Switch uncheckedLabel={'Standings'} checkedLabel={'Top Scorers'} checked={toggle} onChange={hadleToggle} />
+            <Switch
+                uncheckedLabel={'Standings'}
+                checkedLabel={'Top Scorers'}
+                checked={toggle}
+                onChange={handleToggle}
+            />
             <div style={{ position: 'absolute', right: '0px', width: '200px' }}>
                 <Select
                     allowClear={false}
@@ -234,7 +239,9 @@ const StandingsTable = ({ handleNameClick, standingsData, topScorersData }) => {
             setStage(null)
             setStageOptions([])
         } else {
-            setStageOptions(standingsData.map(_ => ({ key: `${_.stage_id}`, label: _.stage_name })))
+            setStageOptions(
+                standingsData.map(stageOption => ({ key: `${stageOption.stage_id}`, label: stageOption.stage_name }))
+            )
             setStage(`${standingsData[ZERO].id}`)
         }
     }, [standingsData])

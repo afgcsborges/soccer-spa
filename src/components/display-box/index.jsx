@@ -7,11 +7,10 @@ import styled from 'styled-components'
 const StyledText = styled.div`
     white-space: pre-line;
     inline-size: max-content;
-    width: 110px;
+    width: 150px;
     text-align: left;
 `
 
-/* istanbul ignore next */
 const StyledTitle = styled.div`
     min-width: 100px;
     text-align: start;

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { get, isEmpty, orderBy } from 'lodash'
+import { getLeaguesAndSeasons, getSeasonStandings, getTopScorers } from 'state/axios'
 
-import { getLeagues, getSeasonStandings, getSeasons, getTopScorers } from 'state/axios'
+import PlayerProfile from 'containers/player-profile'
 import PropTypes from 'prop-types'
 import Select from 'components/select'
 import StandingsTable from 'containers/standings-table'
@@ -13,16 +14,15 @@ const Home = ({ apiKey }) => {
     const [leagueData, setLeagueData] = useState([])
     const [leagueOptions, setLeagueOptions] = useState([])
     const [selectedLeague, setSelectedLeague] = useState(null)
-    const [seasonData, setSeasonData] = useState([])
     const [seasonOptions, setSeasonOptions] = useState([])
     const [selectedSeason, setSelectedSeason] = useState(null)
     const [standingsData, setStandingsData] = useState([])
     const [topScorersData, setTopScorersData] = useState({})
     const [selectedTeam, setSelectedTeam] = useState(null)
+    const [selectedPlayer, setSelectedPlayer] = useState(null)
 
     useEffect(() => {
-        getLeagues(apiKey, setLeagueData)
-        getSeasons(apiKey, setSeasonData)
+        getLeaguesAndSeasons(apiKey, setLeagueData)
     }, [])
 
     useEffect(() => {
@@ -33,8 +33,13 @@ const Home = ({ apiKey }) => {
         if (isEmpty(selectedLeague)) {
             setSeasonOptions([])
         } else {
+            const currentLeagueSeasons = get(
+                leagueData.find(league => `${league.id}` === selectedLeague),
+                'seasons.data',
+                []
+            )
             setSeasonOptions(
-                orderBy(get(seasonData, selectedLeague, []), 'id', 'desc').map(season => ({
+                orderBy(currentLeagueSeasons, 'id', 'desc').map(season => ({
                     key: `${season.id}`,
                     label: season.name
                 }))
@@ -62,9 +67,22 @@ const Home = ({ apiKey }) => {
 
     return (
         <div className="App">
+            {selectedPlayer && (
+                <PlayerProfile
+                    onClose={() => {
+                        setSelectedPlayer(null)
+                    }}
+                    playerId={selectedPlayer}
+                />
+            )}
             {selectedTeam ? (
                 <>
-                    <TeamLayout apiKey={apiKey} onButtonClick={() => setSelectedTeam(null)} teamId={selectedTeam} />
+                    <TeamLayout
+                        apiKey={apiKey}
+                        onButtonClick={() => setSelectedTeam(null)}
+                        teamId={selectedTeam}
+                        onPlayerClick={setSelectedPlayer}
+                    />
                 </>
             ) : (
                 <>
@@ -92,7 +110,9 @@ const Home = ({ apiKey }) => {
         </div>
     )
 }
+
 Home.propTypes = {
     apiKey: PropTypes.string
 }
+
 export default Home
