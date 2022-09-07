@@ -34,242 +34,703 @@ export const playerData = {
 export const standingsData = {
     data: [
         {
-            id: 77457696,
+            id: 77443802,
             name: 'Regular Season',
             league_id: 271,
-            season_id: 19686,
-            round_id: 274238,
-            round_name: 8,
+            season_id: 16020,
+            round_id: 169497,
+            round_name: 1,
             type: 'Group Stage',
-            stage_id: 77457696,
+            stage_id: 77443802,
             stage_name: 'Regular Season',
             resource: 'stage',
             standings: {
                 data: [
                     {
                         position: 1,
-                        team_id: 2394,
-                        team_name: 'Nordsjælland',
-                        round_id: 274238,
-                        round_name: 8,
+                        team_id: 939,
+                        team_name: 'Midtjylland',
+                        round_id: 169497,
+                        round_name: 1,
                         group_id: null,
                         group_name: null,
                         overall: {
-                            games_played: 8,
-                            won: 6,
-                            draw: 1,
-                            lost: 1,
-                            goals_scored: 14,
-                            goals_against: 7,
-                            points: 19
+                            games_played: 26,
+                            won: 21,
+                            draw: 2,
+                            lost: 3,
+                            goals_scored: 42,
+                            goals_against: 14
                         },
                         home: {
-                            games_played: 4,
-                            won: 3,
-                            draw: 0,
-                            lost: 1,
-                            goals_scored: 6,
-                            goals_against: 4,
-                            points: 9
+                            games_played: 13,
+                            won: 9,
+                            draw: 1,
+                            lost: 3,
+                            goals_scored: 20,
+                            goals_against: 10
                         },
                         away: {
-                            games_played: 4,
-                            won: 3,
+                            games_played: 13,
+                            won: 12,
                             draw: 1,
                             lost: 0,
-                            goals_scored: 8,
-                            goals_against: 3,
-                            points: 10
+                            goals_scored: 22,
+                            goals_against: 4
                         },
                         total: {
-                            goal_difference: '7',
-                            points: 19
+                            goal_difference: '28',
+                            points: 65
                         },
                         result: 'Championship Round',
-                        points: 19,
-                        recent_form: 'WDLWW',
+                        points: 65,
+                        recent_form: 'WWWLW',
                         status: null
                     },
                     {
                         position: 2,
-                        team_id: 2356,
-                        team_name: 'Randers',
-                        round_id: 274238,
-                        round_name: 8,
+                        team_id: 85,
+                        team_name: 'København',
+                        round_id: 169497,
+                        round_name: 1,
                         group_id: null,
                         group_name: null,
                         overall: {
-                            games_played: 8,
-                            won: 5,
-                            draw: 3,
-                            lost: 0,
-                            goals_scored: 11,
-                            goals_against: 4,
-                            points: 18
+                            games_played: 26,
+                            won: 18,
+                            draw: 2,
+                            lost: 6,
+                            goals_scored: 47,
+                            goals_against: 29
                         },
                         home: {
-                            games_played: 4,
-                            won: 3,
+                            games_played: 13,
+                            won: 11,
                             draw: 1,
-                            lost: 0,
-                            goals_scored: 5,
-                            goals_against: 2,
-                            points: 10
+                            lost: 1,
+                            goals_scored: 28,
+                            goals_against: 12
                         },
                         away: {
-                            games_played: 4,
-                            won: 2,
-                            draw: 2,
-                            lost: 0,
-                            goals_scored: 6,
-                            goals_against: 2,
-                            points: 8
+                            games_played: 13,
+                            won: 7,
+                            draw: 1,
+                            lost: 5,
+                            goals_scored: 19,
+                            goals_against: 17
                         },
                         total: {
-                            goal_difference: '7',
-                            points: 18
+                            goal_difference: '18',
+                            points: 56
                         },
                         result: 'Championship Round',
-                        points: 18,
-                        recent_form: 'WWWWW',
+                        points: 56,
+                        recent_form: 'DWLWW',
                         status: null
                     },
                     {
                         position: 3,
-                        team_id: 2447,
-                        team_name: 'Viborg',
-                        round_id: 274238,
-                        round_name: 8,
+                        team_id: 2905,
+                        team_name: 'AGF',
+                        round_id: 169497,
+                        round_name: 1,
                         group_id: null,
                         group_name: null,
                         overall: {
-                            games_played: 8,
-                            won: 5,
-                            draw: 0,
-                            lost: 3,
-                            goals_scored: 13,
-                            goals_against: 10,
-                            points: 15
+                            games_played: 26,
+                            won: 14,
+                            draw: 5,
+                            lost: 7,
+                            goals_scored: 42,
+                            goals_against: 28
                         },
                         home: {
-                            games_played: 4,
-                            won: 4,
-                            draw: 0,
-                            lost: 0,
-                            goals_scored: 10,
-                            goals_against: 4,
-                            points: 12
+                            games_played: 13,
+                            won: 7,
+                            draw: 3,
+                            lost: 3,
+                            goals_scored: 22,
+                            goals_against: 13
                         },
                         away: {
-                            games_played: 4,
-                            won: 1,
-                            draw: 0,
-                            lost: 3,
-                            goals_scored: 3,
-                            goals_against: 6,
-                            points: 3
+                            games_played: 13,
+                            won: 7,
+                            draw: 2,
+                            lost: 4,
+                            goals_scored: 20,
+                            goals_against: 15
                         },
                         total: {
-                            goal_difference: '3',
-                            points: 15
+                            goal_difference: '14',
+                            points: 47
                         },
                         result: 'Championship Round',
-                        points: 15,
-                        recent_form: 'LWLWW',
+                        points: 47,
+                        recent_form: 'DLDWW',
                         status: null
                     },
                     {
                         position: 4,
-                        team_id: 86,
-                        team_name: 'Silkeborg',
-                        round_id: 274238,
-                        round_name: 8,
+                        team_id: 293,
+                        team_name: 'Brøndby',
+                        round_id: 169497,
+                        round_name: 1,
                         group_id: null,
                         group_name: null,
                         overall: {
-                            games_played: 8,
-                            won: 4,
-                            draw: 1,
-                            lost: 3,
-                            goals_scored: 13,
-                            goals_against: 9,
-                            points: 13
+                            games_played: 26,
+                            won: 13,
+                            draw: 3,
+                            lost: 10,
+                            goals_scored: 47,
+                            goals_against: 37
                         },
                         home: {
-                            games_played: 3,
-                            won: 2,
-                            draw: 0,
-                            lost: 1,
-                            goals_scored: 6,
-                            goals_against: 3,
-                            points: 6
+                            games_played: 13,
+                            won: 9,
+                            draw: 1,
+                            lost: 3,
+                            goals_scored: 27,
+                            goals_against: 17
                         },
                         away: {
-                            games_played: 5,
-                            won: 2,
-                            draw: 1,
-                            lost: 2,
-                            goals_scored: 7,
-                            goals_against: 6,
-                            points: 7
+                            games_played: 13,
+                            won: 4,
+                            draw: 2,
+                            lost: 7,
+                            goals_scored: 20,
+                            goals_against: 20
                         },
                         total: {
-                            goal_difference: '4',
-                            points: 13
+                            goal_difference: '10',
+                            points: 42
                         },
                         result: 'Championship Round',
-                        points: 13,
-                        recent_form: 'WLWLL',
+                        points: 42,
+                        recent_form: 'LWDWL',
                         status: null
                     },
                     {
                         position: 5,
-                        team_id: 2905,
-                        team_name: 'AGF',
-                        round_id: 274238,
-                        round_name: 8,
+                        team_id: 2394,
+                        team_name: 'Nordsjælland',
+                        round_id: 169497,
+                        round_name: 1,
                         group_id: null,
                         group_name: null,
                         overall: {
-                            games_played: 8,
-                            won: 4,
-                            draw: 1,
-                            lost: 3,
-                            goals_scored: 11,
-                            goals_against: 8,
-                            points: 13
+                            games_played: 26,
+                            won: 12,
+                            draw: 5,
+                            lost: 9,
+                            goals_scored: 48,
+                            goals_against: 35
                         },
                         home: {
-                            games_played: 4,
-                            won: 2,
-                            draw: 1,
-                            lost: 1,
-                            goals_scored: 6,
-                            goals_against: 4,
-                            points: 7
+                            games_played: 13,
+                            won: 7,
+                            draw: 3,
+                            lost: 3,
+                            goals_scored: 24,
+                            goals_against: 11
                         },
                         away: {
-                            games_played: 4,
-                            won: 2,
-                            draw: 0,
-                            lost: 2,
-                            goals_scored: 5,
-                            goals_against: 4,
-                            points: 6
+                            games_played: 13,
+                            won: 5,
+                            draw: 2,
+                            lost: 6,
+                            goals_scored: 24,
+                            goals_against: 24
                         },
                         total: {
-                            goal_difference: '3',
-                            points: 13
+                            goal_difference: '13',
+                            points: 41
                         },
                         result: 'Championship Round',
-                        points: 13,
-                        recent_form: 'WWWLL',
+                        points: 41,
+                        recent_form: 'WWDWL',
+                        status: null
+                    }
+                ]
+            }
+        },
+        {
+            id: 77443800,
+            name: 'Relegation Round',
+            league_id: 271,
+            season_id: 16020,
+            round_id: 169497,
+            round_name: 1,
+            type: 'Group Stage',
+            stage_id: 77443800,
+            stage_name: 'Relegation Round',
+            resource: 'stage',
+            standings: {
+                data: [
+                    {
+                        id: 243863,
+                        name: 'Group 1',
+                        league_id: 271,
+                        season_id: 16020,
+                        round_id: 169497,
+                        round_name: 1,
+                        stage_id: 77443800,
+                        stage_name: 'Relegation Round',
+                        resource: 'group',
+                        standings: {
+                            data: [
+                                {
+                                    position: 1,
+                                    team_id: 1789,
+                                    team_name: 'OB',
+                                    round_id: 169497,
+                                    round_name: 1,
+                                    group_id: 243863,
+                                    group_name: 'Group 1',
+                                    overall: {
+                                        games_played: 32,
+                                        won: 12,
+                                        draw: 7,
+                                        lost: 13,
+                                        goals_scored: 43,
+                                        goals_against: 42
+                                    },
+                                    home: {
+                                        games_played: 16,
+                                        won: 8,
+                                        draw: 3,
+                                        lost: 5,
+                                        goals_scored: 27,
+                                        goals_against: 18
+                                    },
+                                    away: {
+                                        games_played: 16,
+                                        won: 4,
+                                        draw: 4,
+                                        lost: 8,
+                                        goals_scored: 16,
+                                        goals_against: 24
+                                    },
+                                    total: {
+                                        goal_difference: '1',
+                                        points: 43
+                                    },
+                                    result: 'UEFA Europa League Play-off',
+                                    points: 43,
+                                    recent_form: 'WWWDL',
+                                    status: null
+                                },
+                                {
+                                    position: 2,
+                                    team_id: 390,
+                                    team_name: 'SønderjyskE',
+                                    round_id: 169497,
+                                    round_name: 1,
+                                    group_id: 243863,
+                                    group_name: 'Group 1',
+                                    overall: {
+                                        games_played: 32,
+                                        won: 9,
+                                        draw: 11,
+                                        lost: 12,
+                                        goals_scored: 37,
+                                        goals_against: 49
+                                    },
+                                    home: {
+                                        games_played: 16,
+                                        won: 6,
+                                        draw: 6,
+                                        lost: 4,
+                                        goals_scored: 20,
+                                        goals_against: 21
+                                    },
+                                    away: {
+                                        games_played: 16,
+                                        won: 3,
+                                        draw: 5,
+                                        lost: 8,
+                                        goals_scored: 17,
+                                        goals_against: 28
+                                    },
+                                    total: {
+                                        goal_difference: '-12',
+                                        points: 38
+                                    },
+                                    result: 'UEFA Europa League Play-off',
+                                    points: 38,
+                                    recent_form: 'LWWDD',
+                                    status: null
+                                },
+                                {
+                                    position: 3,
+                                    team_id: 2650,
+                                    team_name: 'Lyngby',
+                                    round_id: 169497,
+                                    round_name: 1,
+                                    group_id: 243863,
+                                    group_name: 'Group 1',
+                                    overall: {
+                                        games_played: 32,
+                                        won: 9,
+                                        draw: 7,
+                                        lost: 16,
+                                        goals_scored: 34,
+                                        goals_against: 54
+                                    },
+                                    home: {
+                                        games_played: 16,
+                                        won: 8,
+                                        draw: 3,
+                                        lost: 5,
+                                        goals_scored: 21,
+                                        goals_against: 23
+                                    },
+                                    away: {
+                                        games_played: 16,
+                                        won: 1,
+                                        draw: 4,
+                                        lost: 11,
+                                        goals_scored: 13,
+                                        goals_against: 31
+                                    },
+                                    total: {
+                                        goal_difference: '-20',
+                                        points: 34
+                                    },
+                                    result: 'Relegation Play-off',
+                                    points: 34,
+                                    recent_form: 'DLLLD',
+                                    status: null
+                                },
+                                {
+                                    position: 4,
+                                    team_id: 86,
+                                    team_name: 'Silkeborg',
+                                    round_id: 169497,
+                                    round_name: 1,
+                                    group_id: 243863,
+                                    group_name: 'Group 1',
+                                    overall: {
+                                        games_played: 32,
+                                        won: 6,
+                                        draw: 8,
+                                        lost: 18,
+                                        goals_scored: 43,
+                                        goals_against: 59
+                                    },
+                                    home: {
+                                        games_played: 16,
+                                        won: 4,
+                                        draw: 2,
+                                        lost: 10,
+                                        goals_scored: 23,
+                                        goals_against: 29
+                                    },
+                                    away: {
+                                        games_played: 16,
+                                        won: 2,
+                                        draw: 6,
+                                        lost: 8,
+                                        goals_scored: 20,
+                                        goals_against: 30
+                                    },
+                                    total: {
+                                        goal_difference: '-16',
+                                        points: 26
+                                    },
+                                    result: 'Relegation',
+                                    points: 26,
+                                    recent_form: 'DLLWW',
+                                    status: null
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            id: 77443801,
+            name: 'Championship Round',
+            league_id: 271,
+            season_id: 16020,
+            round_id: 169497,
+            round_name: 1,
+            type: 'Group Stage',
+            stage_id: 77443801,
+            stage_name: 'Championship Round',
+            resource: 'stage',
+            standings: {
+                data: [
+                    {
+                        position: 1,
+                        team_id: 939,
+                        team_name: 'Midtjylland',
+                        round_id: 169497,
+                        round_name: 1,
+                        group_id: null,
+                        group_name: null,
+                        overall: {
+                            games_played: 36,
+                            won: 26,
+                            draw: 4,
+                            lost: 6,
+                            goals_scored: 61,
+                            goals_against: 29
+                        },
+                        home: {
+                            games_played: 18,
+                            won: 11,
+                            draw: 2,
+                            lost: 5,
+                            goals_scored: 33,
+                            goals_against: 20
+                        },
+                        away: {
+                            games_played: 18,
+                            won: 15,
+                            draw: 2,
+                            lost: 1,
+                            goals_scored: 28,
+                            goals_against: 9
+                        },
+                        total: {
+                            goal_difference: '32',
+                            points: 82
+                        },
+                        result: 'UEFA Champions League Qualifiers',
+                        points: 82,
+                        recent_form: 'WLWDL',
+                        status: null
+                    },
+                    {
+                        position: 2,
+                        team_id: 85,
+                        team_name: 'København',
+                        round_id: 169497,
+                        round_name: 1,
+                        group_id: null,
+                        group_name: null,
+                        overall: {
+                            games_played: 36,
+                            won: 21,
+                            draw: 5,
+                            lost: 10,
+                            goals_scored: 58,
+                            goals_against: 42
+                        },
+                        home: {
+                            games_played: 18,
+                            won: 13,
+                            draw: 2,
+                            lost: 3,
+                            goals_scored: 35,
+                            goals_against: 19
+                        },
+                        away: {
+                            games_played: 18,
+                            won: 8,
+                            draw: 3,
+                            lost: 7,
+                            goals_scored: 23,
+                            goals_against: 23
+                        },
+                        total: {
+                            goal_difference: '16',
+                            points: 68
+                        },
+                        result: 'UEFA Europa League Qualifiers',
+                        points: 68,
+                        recent_form: 'LDLWW',
+                        status: null
+                    },
+                    {
+                        position: 3,
+                        team_id: 2905,
+                        team_name: 'AGF',
+                        round_id: 169497,
+                        round_name: 1,
+                        group_id: null,
+                        group_name: null,
+                        overall: {
+                            games_played: 36,
+                            won: 19,
+                            draw: 7,
+                            lost: 10,
+                            goals_scored: 58,
+                            goals_against: 41
+                        },
+                        home: {
+                            games_played: 18,
+                            won: 10,
+                            draw: 3,
+                            lost: 5,
+                            goals_scored: 29,
+                            goals_against: 19
+                        },
+                        away: {
+                            games_played: 18,
+                            won: 9,
+                            draw: 4,
+                            lost: 5,
+                            goals_scored: 29,
+                            goals_against: 22
+                        },
+                        total: {
+                            goal_difference: '17',
+                            points: 64
+                        },
+                        result: 'UEFA Europa League Qualifiers',
+                        points: 64,
+                        recent_form: 'LWWDL',
+                        status: null
+                    },
+                    {
+                        position: 4,
+                        team_id: 293,
+                        team_name: 'Brøndby',
+                        round_id: 169497,
+                        round_name: 1,
+                        group_id: null,
+                        group_name: null,
+                        overall: {
+                            games_played: 36,
+                            won: 16,
+                            draw: 8,
+                            lost: 12,
+                            goals_scored: 56,
+                            goals_against: 42
+                        },
+                        home: {
+                            games_played: 18,
+                            won: 10,
+                            draw: 4,
+                            lost: 4,
+                            goals_scored: 33,
+                            goals_against: 20
+                        },
+                        away: {
+                            games_played: 18,
+                            won: 6,
+                            draw: 4,
+                            lost: 8,
+                            goals_scored: 23,
+                            goals_against: 22
+                        },
+                        total: {
+                            goal_difference: '14',
+                            points: 56
+                        },
+                        result: 'UEFA Europa League Qualifiers',
+                        points: 56,
+                        recent_form: 'WDLDW',
+                        status: null
+                    },
+                    {
+                        position: 5,
+                        team_id: 1020,
+                        team_name: 'AaB',
+                        round_id: 169497,
+                        round_name: 1,
+                        group_id: null,
+                        group_name: null,
+                        overall: {
+                            games_played: 36,
+                            won: 16,
+                            draw: 6,
+                            lost: 14,
+                            goals_scored: 54,
+                            goals_against: 44
+                        },
+                        home: {
+                            games_played: 18,
+                            won: 9,
+                            draw: 2,
+                            lost: 7,
+                            goals_scored: 27,
+                            goals_against: 22
+                        },
+                        away: {
+                            games_played: 18,
+                            won: 7,
+                            draw: 4,
+                            lost: 7,
+                            goals_scored: 27,
+                            goals_against: 22
+                        },
+                        total: {
+                            goal_difference: '10',
+                            points: 54
+                        },
+                        result: null,
+                        points: 54,
+                        recent_form: 'WDWLW',
+                        status: null
+                    },
+                    {
+                        position: 6,
+                        team_id: 2394,
+                        team_name: 'Nordsjælland',
+                        round_id: 169497,
+                        round_name: 1,
+                        group_id: null,
+                        group_name: null,
+                        overall: {
+                            games_played: 36,
+                            won: 13,
+                            draw: 8,
+                            lost: 15,
+                            goals_scored: 59,
+                            goals_against: 54
+                        },
+                        home: {
+                            games_played: 18,
+                            won: 7,
+                            draw: 6,
+                            lost: 5,
+                            goals_scored: 26,
+                            goals_against: 16
+                        },
+                        away: {
+                            games_played: 18,
+                            won: 6,
+                            draw: 2,
+                            lost: 10,
+                            goals_scored: 33,
+                            goals_against: 38
+                        },
+                        total: {
+                            goal_difference: '5',
+                            points: 47
+                        },
+                        result: null,
+                        points: 47,
+                        recent_form: 'LDLDL',
                         status: null
                     }
                 ]
             }
         }
-    ]
+    ],
+    meta: {
+        plans: [
+            {
+                name: 'Football Free Plan',
+                features: 'Standard',
+                price_monthly: '0.00',
+                price_yearly: '0.00',
+                request_limit: '180,60',
+                sport: 'Soccer'
+            }
+        ],
+        sports: [
+            {
+                id: 1,
+                name: 'Soccer',
+                current: true
+            }
+        ]
+    }
 }
 
 export const topScorersData = {
@@ -279,7 +740,7 @@ export const topScorersData = {
         league_id: 271,
         is_current_season: true,
         current_round_id: 274238,
-        current_stage_id: 77457696,
+        current_stage_id: 77443802,
         goalscorers: {
             data: [
                 {
@@ -287,7 +748,7 @@ export const topScorersData = {
                     season_id: 19686,
                     player_id: 172250,
                     team_id: 85,
-                    stage_id: 77457696,
+                    stage_id: 77443802,
                     goals: 6,
                     penalty_goals: 0,
                     type: 'goals',
@@ -333,7 +794,7 @@ export const topScorersData = {
                     season_id: 19686,
                     player_id: 447344,
                     team_id: 85,
-                    stage_id: 77457696,
+                    stage_id: 77443802,
                     goals: 5,
                     penalty_goals: 2,
                     type: 'goals',
@@ -379,7 +840,7 @@ export const topScorersData = {
                     season_id: 19686,
                     player_id: 37555815,
                     team_id: 2394,
-                    stage_id: 77457696,
+                    stage_id: 77443802,
                     goals: 4,
                     penalty_goals: 1,
                     type: 'goals',
@@ -425,7 +886,7 @@ export const topScorersData = {
                     season_id: 19686,
                     player_id: 84620,
                     team_id: 939,
-                    stage_id: 77457696,
+                    stage_id: 77443802,
                     goals: 3,
                     penalty_goals: 0,
                     type: 'goals',
@@ -521,7 +982,7 @@ export const topScorersData = {
                     season_id: 19686,
                     player_id: 172250,
                     team_id: 293,
-                    stage_id: 77457696,
+                    stage_id: 77443802,
                     assists: 3,
                     type: 'assists'
                 }
