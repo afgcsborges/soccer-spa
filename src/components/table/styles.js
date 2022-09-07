@@ -1,6 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components'
-
 import AntdTable from 'antd/lib/table'
+import styled from 'styled-components'
 
 /* istanbul ignore next */
 export const StyledTable = styled(AntdTable)`
@@ -8,18 +7,14 @@ export const StyledTable = styled(AntdTable)`
         .ant-table-thead {
             line-height: 1.4;
             th {
-                background: ${props => (props.transparent ? '#FFFFFF' : '#E2E2E2')};
+                background: #e2e2e2;
                 border-bottom: unset;
             }
         }
 
         .ant-table-cell-fix-left,
         .ant-table-cell-fix-right {
-            background-color: ${props => (props.transparent ? '#FFFFFF' : '#E2E2E2')} !important;
-        }
-
-        .ant-table-body {
-            border-top: ${props => (props.transparent ? `1px solid #F4F4F4` : 'unset')};
+            background-color: #e2e2e2 !important;
         }
 
         .ant-table-header > table > thead > tr {
@@ -31,7 +26,7 @@ export const StyledTable = styled(AntdTable)`
                 padding: 0px 8px !important;
             }
             th.ant-table-cell:first-child {
-                padding: ${props => (props.justifiedLeftRow ? '8px !important' : '1px 8px !important')};
+                padding: 1px 8px !important;
             }
 
             .ant-table-column-sorters {
@@ -48,7 +43,7 @@ export const StyledTable = styled(AntdTable)`
         }
 
         .ant-table-tbody {
-            height: ${({ scroll }) => (scroll ? `${scroll.y}px` : 'auto')};
+            height: auto;
 
             .ant-table-expanded-row .ant-table-expanded-row-level-1 {
                 display: none;
@@ -71,10 +66,6 @@ export const StyledTable = styled(AntdTable)`
                     .ant-table-row-expand-icon:focus {
                         color: #f69127;
                     }
-                }
-
-                .ant-table-cell:not(:first-child) {
-                    background-color: ${props => (props.smallFrame ? '#000000' : 'unset')};
                 }
 
                 :hover .ant-table-cell {
@@ -127,67 +118,5 @@ export const StyledTable = styled(AntdTable)`
         .ant-table-column-sorters {
             padding: 0;
         }
-
-        /** Loading */
-        .ant-spin-dot-item {
-            background-color: #f69127;
-        }
     }
-`
-
-export const GlobalStyledTable = createGlobalStyle`
-    .ant-table-filter-dropdown {
-        background-color: #FFFFFF !important;
-        padding: 8px !important;
-        border-bottom-left-radius: 4px !important;
-        border-bottom-right-radius: 4px !important;
-    }
-`
-
-export const StyledTableContainer = styled.div`
-    height: 80%;
-    width: 80%;
-    padding-bottom: 20px;
-
-    &&& .ant-table-body {
-        background-color: #ffffff;
-    }
-
-    &&& .ant-table-cell {
-        color: #4c4c4c;
-    }
-
-    &&& .ant-select-arrow {
-        color: #4c4c4c;
-    }
-
-    &&& .ant-select-selector {
-        background-color: #ffffff;
-        color: #4c4c4c;
-    }
-
-    &&& .ant-table-filter-trigger:hover,
-    &&& .ant-table-filter-trigger-container-open,
-    &&& .ant-table-filter-trigger-container:hover,
-    &&& .ant-table-filter-trigger-container:hover {
-        background-color: #e2e2e2 !important;
-    }
-
-    &&& .ant-table-tbody > tr.ant-table-placeholder:hover > td {
-        background-color: #e2e2e2;
-    }
-
-    &&& .ant-table-thead th.ant-table-column-has-sorters:hover {
-        background-color: #e2e2e2;
-    }
-
-    &&& .ant-table-thead th.ant-table-column-has-sorters:hover .ant-table-filter-trigger-container {
-        background: transparent;
-    }
-`
-
-export const StyledEmpty = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
 `

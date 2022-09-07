@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { get, isEmpty, orderBy } from 'lodash'
+import { getLeaguesAndSeasons, getSeasonStandings, getTopScorers } from 'state/axios'
 
-import { getLeagues, getSeasonStandings, getSeasons, getTopScorers } from 'state/axios'
+import PlayerProfile from 'containers/player-profile'
 import PropTypes from 'prop-types'
 import Select from 'components/select'
 import StandingsTable from 'containers/standings-table'
@@ -12,17 +13,16 @@ const FIRST_ELEMENT = 0
 const Home = ({ apiKey }) => {
     const [leagueData, setLeagueData] = useState([])
     const [leagueOptions, setLeagueOptions] = useState([])
-    const [selectedLeague, setSelectedLeague] = useState({})
-    const [seasonData, setSeasonData] = useState([])
+    const [selectedLeague, setSelectedLeague] = useState(null)
     const [seasonOptions, setSeasonOptions] = useState([])
     const [selectedSeason, setSelectedSeason] = useState(null)
     const [standingsData, setStandingsData] = useState([])
     const [topScorersData, setTopScorersData] = useState({})
     const [selectedTeam, setSelectedTeam] = useState(null)
+    const [selectedPlayer, setSelectedPlayer] = useState(null)
 
     useEffect(() => {
-        getLeagues(apiKey, setLeagueData)
-        getSeasons(apiKey, setSeasonData)
+        getLeaguesAndSeasons(apiKey, setLeagueData)
     }, [])
 
     useEffect(() => {
@@ -30,11 +30,15 @@ const Home = ({ apiKey }) => {
     }, [leagueData])
 
     useEffect(() => {
-        if (isEmpty(selectedLeague)) {
-            setSeasonOptions([])
-        } else {
+        if (isEmpty(selectedLeague)) setSeasonOptions([])
+        else {
+            const currentLeagueSeasons = get(
+                leagueData.find(league => `${league.id}` === selectedLeague),
+                'seasons.data',
+                []
+            )
             setSeasonOptions(
-                orderBy(get(seasonData, selectedLeague, []), 'id', 'desc').map(season => ({
+                orderBy(currentLeagueSeasons, 'id', 'desc').map(season => ({
                     key: `${season.id}`,
                     label: season.name
                 }))
@@ -43,9 +47,8 @@ const Home = ({ apiKey }) => {
     }, [selectedLeague])
 
     useEffect(() => {
-        if (isEmpty(seasonOptions)) {
-            setSelectedSeason(null)
-        } else {
+        if (isEmpty(seasonOptions)) setSelectedSeason(null)
+        else {
             setSelectedSeason(`${seasonOptions[FIRST_ELEMENT].key}` || null)
         }
     }, [seasonOptions])
@@ -61,37 +64,55 @@ const Home = ({ apiKey }) => {
     }, [selectedSeason])
 
     return (
-        <div className="App" >
-                {selectedTeam ? (
-                    <>
-                        <TeamLayout onButtonClick={() => setSelectedTeam(null)} />
-                    </>
-                ) : (
-                    <>
-                        <Select
-                            options={leagueOptions}
-                            showSearch
-                            onChange={setSelectedLeague}
-                            placeholder={'Please select a league.'}
-                        />
-                        <Select
-                            disabled={isEmpty(selectedLeague) || isEmpty(seasonOptions)}
-                            placeholder={'Please select a league first in order to select a season.'}
-                            options={seasonOptions}
-                            value={selectedSeason}
-                            onChange={setSelectedSeason}
-                        />
-                        <StandingsTable
-                            standingsData={standingsData}
-                            topScorersData={topScorersData}
-                            handleNameClick={setSelectedTeam}
-                        />
-                    </>
-                )}
+        <div className="App">
+            {selectedPlayer && (
+                <PlayerProfile
+                    apiKey={apiKey}
+                    onClose={() => {
+                        setSelectedPlayer(null)
+                    }}
+                    playerId={selectedPlayer}
+                />
+            )}
+            {selectedTeam ? (
+                <>
+                    <TeamLayout
+                        apiKey={apiKey}
+                        onButtonClick={() => setSelectedTeam(null)}
+                        teamId={selectedTeam}
+                        onPlayerClick={setSelectedPlayer}
+                    />
+                </>
+            ) : (
+                <>
+                    <Select
+                        options={leagueOptions}
+                        showSearch
+                        value={selectedLeague}
+                        onChange={setSelectedLeague}
+                        placeholder={'Please select a league.'}
+                    />
+                    <Select
+                        disabled={isEmpty(selectedLeague) || isEmpty(seasonOptions)}
+                        placeholder={'Please select a league first in order to select a season.'}
+                        options={seasonOptions}
+                        value={selectedSeason}
+                        onChange={setSelectedSeason}
+                    />
+                    <StandingsTable
+                        standingsData={standingsData}
+                        topScorersData={topScorersData}
+                        handleTeamNameClick={setSelectedTeam}
+                        handlePlayerNameClick={setSelectedPlayer}
+                    />
+                </>
+            )}
         </div>
     )
 }
+
 Home.propTypes = {
     apiKey: PropTypes.string
 }
+
 export default Home
