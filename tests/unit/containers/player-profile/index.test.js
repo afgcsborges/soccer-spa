@@ -4,18 +4,15 @@ import { act } from '@testing-library/react'
 import axios from 'axios'
 import { mount } from 'enzyme'
 import { playerData } from '../../__mocks__/axiosMocks'
+import { waitStateUpdate } from '../../__mocks__/utils'
 
 jest.mock('axios')
-
-// eslint-disable-next-line no-promise-executor-return
-const waitStateUpdate = () => act(() => new Promise(resolve => setTimeout(resolve, 50)))
 
 axios.get.mockImplementation(url => {
     if (url === 'https://soccer.sportmonks.com/api/v2.0/players/1?include=position,team') {
         return Promise.resolve({ data: playerData })
     }
-    /* eslint-disable-next-line prefer-promise-reject-errors */
-    return Promise.reject()
+    return Promise.reject(new Error('Error'))
 })
 
 describe('Palyer Profile tests', () => {
