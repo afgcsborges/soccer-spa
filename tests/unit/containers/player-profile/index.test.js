@@ -3,42 +3,12 @@ import React from 'react'
 import { act } from '@testing-library/react'
 import axios from 'axios'
 import { mount } from 'enzyme'
+import { playerData } from '../../__mocks__/axiosMocks'
 
 jest.mock('axios')
 
 // eslint-disable-next-line no-promise-executor-return
 const waitStateUpdate = () => act(() => new Promise(resolve => setTimeout(resolve, 50)))
-
-const playerData = {
-    data: {
-        birthcountry: 'Denmark',
-        birthdate: '04/01/1998',
-        birthplace: null,
-        common_name: 'M. Frese',
-        country_id: 320,
-        display_name: 'Martin Frese',
-        firstname: 'Martin',
-        fullname: 'Martin Frese',
-        height: '178 cm',
-        image_path: 'https://cdn.sportmonks.com/images/soccer/players/0/84512.png',
-        lastname: 'Frese',
-        nationality: 'Denmark',
-        player_id: 84512,
-        position: {
-            data: {
-                name: 'Midfielder'
-            }
-        },
-        position_id: 3,
-        team: {
-            data: {
-                name: 'Nordsj\u00e6lland'
-            }
-        },
-        team_id: 2394,
-        weight: '75 kg'
-    }
-}
 
 axios.get.mockImplementation(url => {
     if (url === 'https://soccer.sportmonks.com/api/v2.0/players/1?include=position,team') {
