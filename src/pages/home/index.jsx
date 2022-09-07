@@ -30,9 +30,8 @@ const Home = ({ apiKey }) => {
     }, [leagueData])
 
     useEffect(() => {
-        if (isEmpty(selectedLeague)) {
-            setSeasonOptions([])
-        } else {
+        if (isEmpty(selectedLeague)) setSeasonOptions([])
+        else {
             const currentLeagueSeasons = get(
                 leagueData.find(league => `${league.id}` === selectedLeague),
                 'seasons.data',
@@ -48,9 +47,8 @@ const Home = ({ apiKey }) => {
     }, [selectedLeague])
 
     useEffect(() => {
-        if (isEmpty(seasonOptions)) {
-            setSelectedSeason(null)
-        } else {
+        if (isEmpty(seasonOptions)) setSelectedSeason(null)
+        else {
             setSelectedSeason(`${seasonOptions[FIRST_ELEMENT].key}` || null)
         }
     }, [seasonOptions])
@@ -69,6 +67,7 @@ const Home = ({ apiKey }) => {
         <div className="App">
             {selectedPlayer && (
                 <PlayerProfile
+                    apiKey={apiKey}
                     onClose={() => {
                         setSelectedPlayer(null)
                     }}
@@ -103,7 +102,8 @@ const Home = ({ apiKey }) => {
                     <StandingsTable
                         standingsData={standingsData}
                         topScorersData={topScorersData}
-                        handleNameClick={setSelectedTeam}
+                        handleTeamNameClick={setSelectedTeam}
+                        handlePlayerNameClick={setSelectedPlayer}
                     />
                 </>
             )}

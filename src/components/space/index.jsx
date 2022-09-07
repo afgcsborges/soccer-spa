@@ -31,25 +31,15 @@ Space.defaultProps = {
 }
 
 Space.propTypes = {
-    /**
-     * 	Align items
-     */
+    /** Align items */
     align: PropTypes.oneOf(['start', 'end', 'center', 'baseline']),
-    /**
-     * Used to display whatever you wanna include between the opening and closing tags
-     */
+    /** Used to display whatever you wanna include between the opening and closing tags */
     children: PropTypes.node,
-    /**
-     * Class name attribute
-     */
+    /**  Class name attribute */
     className: PropTypes.string,
-    /**
-     * 	The space direction
-     */
+    /** The space direction */
     direction: PropTypes.oneOf(['vertical', 'horizontal']),
-    /**
-     * 	The space size
-     */
+    /**	The space size */
     size: PropTypes.oneOfType([PropTypes.oneOf(['small', 'middle', 'large']), PropTypes.number])
 }
 

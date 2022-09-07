@@ -1,6 +1,7 @@
+import Space from 'components/space'
 import styled from 'styled-components'
 
-export const StyledContextContainer = styled.div`
+export const StyledPlayerProfileContainer = styled.div`
     display: flex;
     flex: 1 1 0%;
     height: 100%;
@@ -14,7 +15,7 @@ export const StyledContextContainer = styled.div`
     backdrop-filter: blur(1px);
 `
 
-export const StyledContext = styled.div`
+export const StyledPlayerProfile = styled.div`
     position: fixed;
     z-index: 1000;
     left: 46px;
@@ -34,35 +35,6 @@ export const StyledContext = styled.div`
     }
 `
 
-export const StyledContextGrid = styled.div`
-    display: flex;
-    height: calc(100% - 54px);
-    grid-column-gap: 16px;
-`
-
-export const StyledLeftContent = styled.div`
-    height: 100%;
-    width: 40%;
-    padding: 8px 16px;
-    border-radius: 4px;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
-
-export const StyledRightContent = styled.div`
-    height: 100%;
-    width: 60%;
-`
-
-export const StyledTitle = styled.div`
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    height: 36px;
-    padding: 0 8px;
-`
-
 export const StyledContent = styled.div`
     display: flex;
     flex-direction: column;
@@ -72,17 +44,24 @@ export const StyledContent = styled.div`
     padding: 16px;
 `
 
-/* istanbul ignore next */
-export const StyledContextItem = styled.div`
-    width: 100%;
+export const StyledSpace = styled(Space)`
     height: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr;
+    width: 60% !important;
 `
 
-export const StyledContextButton = styled.div`
-    align-self: center;
-    justify-self: center;
+export const StyledPlayerProfileGrid = styled.div`
+    display: flex;
+    height: calc(100% - 54px);
+    grid-column-gap: 16px;
+`
+
+export const StyledPlayerImage = styled.div`
+    height: 100%;
+    width: 40%;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `

@@ -35,6 +35,7 @@ module.exports = {
                 'max-lines-per-function': ['off'],
                 'max-statements': 'off',
                 'new-cap': 'off',
+                'no-magic-numbers': 'off',
                 'no-undefined': 'off',
                 'require-unicode-regexp': 'off'
             }

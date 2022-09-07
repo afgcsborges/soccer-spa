@@ -47,3 +47,14 @@ export const getTeamPlayers = (apiKey, setTeamPlayers, selectedTeam) => {
             logError(err)
         })
 }
+
+export const getPlayerInfo = (apiKey, setPlayerInfo, playerId) => {
+    axios
+        .get(`https://soccer.sportmonks.com/api/v2.0/players/${playerId}?include=position,team`, {
+            params: { api_token: apiKey }
+        })
+        .then(res => setPlayerInfo(res.data.data))
+        .catch(err => {
+            logError(err)
+        })
+}

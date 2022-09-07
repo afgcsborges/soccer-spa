@@ -20,16 +20,18 @@ const StyledTitle = styled.div`
 const DisplayBox = ({ label, value }) => (
     <Space size="large">
         <StyledTitle>
-            <Text level={1} label={label} weight="medium" />
+            <Text level={1} label={label} />
         </StyledTitle>
         <StyledText>
-            <Text level={1} label={value} weight="bold" />
+            <Text level={1} label={value} strong />
         </StyledText>
     </Space>
 )
 
 DisplayBox.propTypes = {
+    /** Label to display */
     label: PropTypes.string,
+    /** Value to display */
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
 }
 

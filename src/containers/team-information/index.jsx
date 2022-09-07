@@ -1,5 +1,3 @@
-/* eslint-disable no-magic-numbers */
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
 
 import DisplayBox from 'components/display-box'
@@ -15,22 +13,18 @@ const StyledSpace = styled(Space)`
     padding: 8px;
 `
 
-const mapTeamInfo = teamData => {
-    console.log(teamData)
+const mapTeamInfo = teamData => ({
+    country: teamData.country.data.name,
+    name: teamData.name,
+    shortCode: teamData.short_code,
+    venueAddress: teamData.venue.data.address,
+    venueCapacity: teamData.venue.data.capacity,
+    venueName: teamData.venue.data.name,
+    venueSurface: teamData.venue.data.surface,
+    yearFounded: teamData.founded
+})
 
-    return {
-        country: teamData.country.data.name,
-        name: teamData.name,
-        shortCode: teamData.short_code,
-        venueAddress: teamData.venue.data.address,
-        venueCapacity: teamData.venue.data.capacity,
-        venueName: teamData.venue.data.name,
-        venueSurface: teamData.venue.data.surface,
-        yearFounded: teamData.founded
-    }
-}
-
-const TeamInformation = ({ apiKey, teamData }) => {
+const TeamInformation = ({ teamData }) => {
     const [teamLogo, setTeamLogo] = useState('')
     const [teamInfo, setTeamInfo] = useState({})
     const [venueImage, setVenueImage] = useState('')
@@ -68,7 +62,6 @@ const TeamInformation = ({ apiKey, teamData }) => {
 }
 
 TeamInformation.propTypes = {
-    apiKey: PropTypes.string,
     teamData: PropTypes.object
 }
 export default TeamInformation
