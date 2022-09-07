@@ -75,4 +75,59 @@ describe('Palyer Profile tests', () => {
         expect(wrapper.find('DisplayBox').at(6).props().value).toBe(playerData.data.height)
         expect(wrapper.find('DisplayBox').at(7).props().value).toBe(playerData.data.weight)
     })
+
+    it('should render data with -', async () => {
+        const onClose = jest.fn()
+        axios.get.mockResolvedValue({ data: {} })
+        const wrapper = mount(<PlayerProfile apiKey="SOME_KEY" onClose={onClose} playerId={1} />)
+
+        await act(async () => {
+            await wrapper.update()
+        })
+        await waitStateUpdate()
+
+        await act(async () => {
+            await wrapper.update()
+        })
+        await waitStateUpdate()
+
+        expect(wrapper).toMatchSnapshot()
+
+        expect(wrapper.find('DisplayBox').at(0).props().value).toBe('-')
+        expect(wrapper.find('DisplayBox').at(1).props().value).toBe('-')
+        expect(wrapper.find('DisplayBox').at(2).props().value).toBe('-')
+        expect(wrapper.find('DisplayBox').at(3).props().value).toBe('-')
+        expect(wrapper.find('DisplayBox').at(4).props().value).toBe('-')
+        expect(wrapper.find('DisplayBox').at(5).props().value).toBe('-')
+        expect(wrapper.find('DisplayBox').at(6).props().value).toBe('-')
+        expect(wrapper.find('DisplayBox').at(7).props().value).toBe('-')
+    })
+
+    it('should trigger onClose', async () => {
+        const onClose = jest.fn()
+        axios.get.mockResolvedValue({ data: playerData })
+        const wrapper = mount(<PlayerProfile apiKey="SOME_KEY" onClose={onClose} playerId={1} />)
+
+        await act(async () => {
+            await wrapper.update()
+        })
+        await waitStateUpdate()
+
+        await act(async () => {
+            await wrapper.update()
+        })
+        await waitStateUpdate()
+
+        expect(wrapper).toMatchSnapshot()
+
+        act(() => {
+            wrapper.find('PlayerProfile').props().onClose()
+        })
+
+        await act(async () => {
+            await wrapper.update()
+        })
+
+        expect(onClose).toHaveBeenCalled()
+    })
 })
