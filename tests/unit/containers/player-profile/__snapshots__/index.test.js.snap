@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Palyer Profile tests should render data correctly 1`] = `
+exports[`Palyer Profile container tests should render data correctly 1`] = `
 <PlayerProfile
   apiKey="SOME_KEY"
   onClose={[MockFunction]}
@@ -1238,7 +1238,7 @@ exports[`Palyer Profile tests should render data correctly 1`] = `
 </PlayerProfile>
 `;
 
-exports[`Palyer Profile tests should render data with - 1`] = `
+exports[`Palyer Profile container tests should render data with - 1`] = `
 <PlayerProfile
   apiKey="SOME_KEY"
   onClose={[MockFunction]}
@@ -2476,7 +2476,7 @@ exports[`Palyer Profile tests should render data with - 1`] = `
 </PlayerProfile>
 `;
 
-exports[`Palyer Profile tests should trigger onClose 1`] = `
+exports[`Palyer Profile container tests should trigger onClose 1`] = `
 <PlayerProfile
   apiKey="SOME_KEY"
   onClose={[MockFunction]}

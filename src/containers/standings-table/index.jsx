@@ -28,13 +28,12 @@ const mapLeagueRows = (data, isGroup) =>
         won: get(leagueRow, 'overall.won')
     }))
 const mapStandingsData = (data, selectedStage) => {
-    const stageData =
-        get(
-            data?.find(stage => `${stage.id}` === selectedStage),
-            'standings.data',
-            []
-        )
-    if(isEmpty(stageData)) return []
+    const stageData = get(
+        data?.find(stage => `${stage.id}` === selectedStage),
+        'standings.data',
+        []
+    )
+    if (isEmpty(stageData)) return []
     if (stageData[ZERO].resource === 'group') {
         const result = []
         stageData.forEach(group => {

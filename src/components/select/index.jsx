@@ -9,7 +9,7 @@ import React from 'react'
 
 const StyledSelect = styled(AntdSelect)`
     width: 80%;
-    height: ${props => props.size === 'large' ? '40px' : '32px'};
+    height: ${props => (props.size === 'large' ? '40px' : '32px')};
     &&&.ant-select {
         min-width: 50px;
         outline: none;

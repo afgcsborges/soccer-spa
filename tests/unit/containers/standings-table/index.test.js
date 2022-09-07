@@ -6,7 +6,7 @@ import { act } from '@testing-library/react'
 import { mount } from 'enzyme'
 import { waitStateUpdate } from '../../__mocks__/utils'
 
-describe('Palyer Profile tests', () => {
+describe('Standings Table container tests', () => {
     it('should render standings data correctly', async () => {
         const onPlayerNameClick = jest.fn()
         const onTeamNameClick = jest.fn()

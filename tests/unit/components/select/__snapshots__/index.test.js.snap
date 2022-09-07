@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should have correct disabled true 1`] = `
+exports[`Select component tests should have correct disabled true 1`] = `
 <Select
   allowClear={true}
   disabled={true}
@@ -575,7 +575,7 @@ exports[`should have correct disabled true 1`] = `
 </Select>
 `;
 
-exports[`should have correct size middle 1`] = `
+exports[`Select component tests should have correct size middle 1`] = `
 <Select
   allowClear={true}
   disabled={false}
@@ -1138,7 +1138,7 @@ exports[`should have correct size middle 1`] = `
 </Select>
 `;
 
-exports[`should render select correctly with default props 1`] = `
+exports[`Select component tests should render select correctly with default props 1`] = `
 <Fragment>
   <Memo(l) />
   <Styled(Component)
@@ -1165,7 +1165,7 @@ exports[`should render select correctly with default props 1`] = `
 </Fragment>
 `;
 
-exports[`should render select correctly with given props 1`] = `
+exports[`Select component tests should render select correctly with given props 1`] = `
 <Fragment>
   <Memo(l) />
   <Styled(Component)

@@ -15,7 +15,7 @@ axios.get.mockImplementation(url => {
     return Promise.reject(new Error('Error'))
 })
 
-describe('Palyer Profile tests', () => {
+describe('Palyer Profile container tests', () => {
     it('should render data correctly', async () => {
         const onClose = jest.fn()
         axios.get.mockResolvedValue({ data: playerData })

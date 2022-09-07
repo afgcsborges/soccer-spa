@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should onClick event be called 1`] = `
+exports[`Button component tests should onClick event be called 1`] = `
 <Styled(Button)
   onClick={[MockFunction]}
 >

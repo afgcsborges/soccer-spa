@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match snapshot,label and value 1`] = `
+exports[`Display Box component tests should match snapshot,label and value 1`] = `
 <Space
   align="start"
   direction="horizontal"

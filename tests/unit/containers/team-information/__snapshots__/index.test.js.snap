@@ -1,0 +1,1198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Team Information container tests should render data correctly 1`] = `
+<TeamInformation>
+  <Styled(Space)
+    direction="horizontal"
+  >
+    <Space
+      align="start"
+      className="sc-eCYdqJ fazpsL"
+      direction="horizontal"
+      size="middle"
+    >
+      <Styled(Space)
+        align="start"
+        className="sc-eCYdqJ fazpsL"
+        direction="horizontal"
+        size="middle"
+      >
+        <Space
+          align="start"
+          className="sc-bczRLJ fhjZjv sc-eCYdqJ fazpsL"
+          direction="horizontal"
+          size="middle"
+        >
+          <div
+            className="ant-space ant-space-horizontal ant-space-align-start sc-bczRLJ fhjZjv sc-eCYdqJ fazpsL"
+            style={Object {}}
+          >
+            <Item
+              className="ant-space-item"
+              direction="horizontal"
+              index={0}
+              key="ant-space-item-0"
+              marginDirection="marginRight"
+              wrap={false}
+            >
+              <div
+                className="ant-space-item"
+                style={
+                  Object {
+                    "marginRight": 16,
+                  }
+                }
+              >
+                <Image
+                  src=""
+                  width={150}
+                >
+                  <img
+                    src="https://media.istockphoto.com/vectors/image-unavailable-icon-vector-id1206575314?k=20&m=1206575314&s=170667a&w=0&h=ioRmz6_fwuW0bETWDp9JZIZdv-YayKXTdtGmjgB5pnI="
+                    style={
+                      Object {
+                        "float": "left",
+                        "marginBottom": "10px",
+                      }
+                    }
+                    width={150}
+                  />
+                </Image>
+              </div>
+            </Item>
+            <Item
+              className="ant-space-item"
+              direction="horizontal"
+              index={1}
+              key="ant-space-item-1"
+              marginDirection="marginRight"
+              wrap={false}
+            >
+              <div
+                className="ant-space-item"
+                style={
+                  Object {
+                    "marginRight": 16,
+                  }
+                }
+              >
+                <Styled(Space)
+                  direction="vertical"
+                >
+                  <Space
+                    align="start"
+                    className="sc-eCYdqJ fazpsL"
+                    direction="vertical"
+                    size="middle"
+                  >
+                    <Styled(Space)
+                      align="start"
+                      className="sc-eCYdqJ fazpsL"
+                      direction="vertical"
+                      size="middle"
+                    >
+                      <Space
+                        align="start"
+                        className="sc-bczRLJ fhjZjv sc-eCYdqJ fazpsL"
+                        direction="vertical"
+                        size="middle"
+                      >
+                        <div
+                          className="ant-space ant-space-vertical ant-space-align-start sc-bczRLJ fhjZjv sc-eCYdqJ fazpsL"
+                          style={Object {}}
+                        >
+                          <Item
+                            className="ant-space-item"
+                            direction="vertical"
+                            index={0}
+                            key="ant-space-item-0"
+                            marginDirection="marginRight"
+                            wrap={false}
+                          >
+                            <div
+                              className="ant-space-item"
+                              style={
+                                Object {
+                                  "marginBottom": 16,
+                                }
+                              }
+                            >
+                              <DisplayBox
+                                label="Team Name:"
+                                minWidth="100px"
+                                textAlign="start"
+                              >
+                                <Space
+                                  align="start"
+                                  direction="horizontal"
+                                  size="large"
+                                >
+                                  <Styled(Space)
+                                    align="start"
+                                    direction="horizontal"
+                                    size="large"
+                                  >
+                                    <Space
+                                      align="start"
+                                      className="sc-bczRLJ fhjZjv"
+                                      direction="horizontal"
+                                      size="large"
+                                    >
+                                      <div
+                                        className="ant-space ant-space-horizontal ant-space-align-start sc-bczRLJ fhjZjv"
+                                        style={Object {}}
+                                      >
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={0}
+                                          key="ant-space-item-0"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={
+                                              Object {
+                                                "marginRight": 24,
+                                              }
+                                            }
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-hKMtZM fLacXp"
+                                              >
+                                                <Text
+                                                  label="Team Name:"
+                                                  level={1}
+                                                  strong={false}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={false}
+                                                    title="Team Name:"
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi bKjELr"
+                                                      title="Team Name:"
+                                                    >
+                                                      Team Name:
+                                                    </span>
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={1}
+                                          key="ant-space-item-1"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={Object {}}
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-dkzDqf ivXJUi"
+                                              >
+                                                <Text
+                                                  level={1}
+                                                  strong={true}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={true}
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi iywsax"
+                                                    />
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                      </div>
+                                    </Space>
+                                  </Styled(Space)>
+                                </Space>
+                              </DisplayBox>
+                            </div>
+                          </Item>
+                          <Item
+                            className="ant-space-item"
+                            direction="vertical"
+                            index={1}
+                            key="ant-space-item-1"
+                            marginDirection="marginRight"
+                            wrap={false}
+                          >
+                            <div
+                              className="ant-space-item"
+                              style={
+                                Object {
+                                  "marginBottom": 16,
+                                }
+                              }
+                            >
+                              <DisplayBox
+                                label="Short Code:"
+                                minWidth="100px"
+                                textAlign="start"
+                              >
+                                <Space
+                                  align="start"
+                                  direction="horizontal"
+                                  size="large"
+                                >
+                                  <Styled(Space)
+                                    align="start"
+                                    direction="horizontal"
+                                    size="large"
+                                  >
+                                    <Space
+                                      align="start"
+                                      className="sc-bczRLJ fhjZjv"
+                                      direction="horizontal"
+                                      size="large"
+                                    >
+                                      <div
+                                        className="ant-space ant-space-horizontal ant-space-align-start sc-bczRLJ fhjZjv"
+                                        style={Object {}}
+                                      >
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={0}
+                                          key="ant-space-item-0"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={
+                                              Object {
+                                                "marginRight": 24,
+                                              }
+                                            }
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-hKMtZM fLacXp"
+                                              >
+                                                <Text
+                                                  label="Short Code:"
+                                                  level={1}
+                                                  strong={false}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={false}
+                                                    title="Short Code:"
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi bKjELr"
+                                                      title="Short Code:"
+                                                    >
+                                                      Short Code:
+                                                    </span>
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={1}
+                                          key="ant-space-item-1"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={Object {}}
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-dkzDqf ivXJUi"
+                                              >
+                                                <Text
+                                                  level={1}
+                                                  strong={true}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={true}
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi iywsax"
+                                                    />
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                      </div>
+                                    </Space>
+                                  </Styled(Space)>
+                                </Space>
+                              </DisplayBox>
+                            </div>
+                          </Item>
+                          <Item
+                            className="ant-space-item"
+                            direction="vertical"
+                            index={2}
+                            key="ant-space-item-2"
+                            marginDirection="marginRight"
+                            wrap={false}
+                          >
+                            <div
+                              className="ant-space-item"
+                              style={
+                                Object {
+                                  "marginBottom": 16,
+                                }
+                              }
+                            >
+                              <DisplayBox
+                                label="Country:"
+                                minWidth="100px"
+                                textAlign="start"
+                              >
+                                <Space
+                                  align="start"
+                                  direction="horizontal"
+                                  size="large"
+                                >
+                                  <Styled(Space)
+                                    align="start"
+                                    direction="horizontal"
+                                    size="large"
+                                  >
+                                    <Space
+                                      align="start"
+                                      className="sc-bczRLJ fhjZjv"
+                                      direction="horizontal"
+                                      size="large"
+                                    >
+                                      <div
+                                        className="ant-space ant-space-horizontal ant-space-align-start sc-bczRLJ fhjZjv"
+                                        style={Object {}}
+                                      >
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={0}
+                                          key="ant-space-item-0"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={
+                                              Object {
+                                                "marginRight": 24,
+                                              }
+                                            }
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-hKMtZM fLacXp"
+                                              >
+                                                <Text
+                                                  label="Country:"
+                                                  level={1}
+                                                  strong={false}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={false}
+                                                    title="Country:"
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi bKjELr"
+                                                      title="Country:"
+                                                    >
+                                                      Country:
+                                                    </span>
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={1}
+                                          key="ant-space-item-1"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={Object {}}
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-dkzDqf ivXJUi"
+                                              >
+                                                <Text
+                                                  level={1}
+                                                  strong={true}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={true}
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi iywsax"
+                                                    />
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                      </div>
+                                    </Space>
+                                  </Styled(Space)>
+                                </Space>
+                              </DisplayBox>
+                            </div>
+                          </Item>
+                          <Item
+                            className="ant-space-item"
+                            direction="vertical"
+                            index={3}
+                            key="ant-space-item-3"
+                            marginDirection="marginRight"
+                            wrap={false}
+                          >
+                            <div
+                              className="ant-space-item"
+                              style={Object {}}
+                            >
+                              <DisplayBox
+                                label="Year Founded:"
+                                minWidth="100px"
+                                textAlign="start"
+                              >
+                                <Space
+                                  align="start"
+                                  direction="horizontal"
+                                  size="large"
+                                >
+                                  <Styled(Space)
+                                    align="start"
+                                    direction="horizontal"
+                                    size="large"
+                                  >
+                                    <Space
+                                      align="start"
+                                      className="sc-bczRLJ fhjZjv"
+                                      direction="horizontal"
+                                      size="large"
+                                    >
+                                      <div
+                                        className="ant-space ant-space-horizontal ant-space-align-start sc-bczRLJ fhjZjv"
+                                        style={Object {}}
+                                      >
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={0}
+                                          key="ant-space-item-0"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={
+                                              Object {
+                                                "marginRight": 24,
+                                              }
+                                            }
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-hKMtZM fLacXp"
+                                              >
+                                                <Text
+                                                  label="Year Founded:"
+                                                  level={1}
+                                                  strong={false}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={false}
+                                                    title="Year Founded:"
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi bKjELr"
+                                                      title="Year Founded:"
+                                                    >
+                                                      Year Founded:
+                                                    </span>
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={1}
+                                          key="ant-space-item-1"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={Object {}}
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-dkzDqf ivXJUi"
+                                              >
+                                                <Text
+                                                  level={1}
+                                                  strong={true}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={true}
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi iywsax"
+                                                    />
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                      </div>
+                                    </Space>
+                                  </Styled(Space)>
+                                </Space>
+                              </DisplayBox>
+                            </div>
+                          </Item>
+                        </div>
+                      </Space>
+                    </Styled(Space)>
+                  </Space>
+                </Styled(Space)>
+              </div>
+            </Item>
+            <Item
+              className="ant-space-item"
+              direction="horizontal"
+              index={2}
+              key="ant-space-item-2"
+              marginDirection="marginRight"
+              wrap={false}
+            >
+              <div
+                className="ant-space-item"
+                style={
+                  Object {
+                    "marginRight": 16,
+                  }
+                }
+              >
+                <Image
+                  src=""
+                  width={150}
+                >
+                  <img
+                    src="https://media.istockphoto.com/vectors/image-unavailable-icon-vector-id1206575314?k=20&m=1206575314&s=170667a&w=0&h=ioRmz6_fwuW0bETWDp9JZIZdv-YayKXTdtGmjgB5pnI="
+                    style={
+                      Object {
+                        "float": "left",
+                        "marginBottom": "10px",
+                      }
+                    }
+                    width={150}
+                  />
+                </Image>
+              </div>
+            </Item>
+            <Item
+              className="ant-space-item"
+              direction="horizontal"
+              index={3}
+              key="ant-space-item-3"
+              marginDirection="marginRight"
+              wrap={false}
+            >
+              <div
+                className="ant-space-item"
+                style={Object {}}
+              >
+                <Styled(Space)
+                  direction="vertical"
+                >
+                  <Space
+                    align="start"
+                    className="sc-eCYdqJ fazpsL"
+                    direction="vertical"
+                    size="middle"
+                  >
+                    <Styled(Space)
+                      align="start"
+                      className="sc-eCYdqJ fazpsL"
+                      direction="vertical"
+                      size="middle"
+                    >
+                      <Space
+                        align="start"
+                        className="sc-bczRLJ fhjZjv sc-eCYdqJ fazpsL"
+                        direction="vertical"
+                        size="middle"
+                      >
+                        <div
+                          className="ant-space ant-space-vertical ant-space-align-start sc-bczRLJ fhjZjv sc-eCYdqJ fazpsL"
+                          style={Object {}}
+                        >
+                          <Item
+                            className="ant-space-item"
+                            direction="vertical"
+                            index={0}
+                            key="ant-space-item-0"
+                            marginDirection="marginRight"
+                            wrap={false}
+                          >
+                            <div
+                              className="ant-space-item"
+                              style={
+                                Object {
+                                  "marginBottom": 16,
+                                }
+                              }
+                            >
+                              <DisplayBox
+                                label="Stadium:"
+                                minWidth="100px"
+                              >
+                                <Space
+                                  align="start"
+                                  direction="horizontal"
+                                  size="large"
+                                >
+                                  <Styled(Space)
+                                    align="start"
+                                    direction="horizontal"
+                                    size="large"
+                                  >
+                                    <Space
+                                      align="start"
+                                      className="sc-bczRLJ fhjZjv"
+                                      direction="horizontal"
+                                      size="large"
+                                    >
+                                      <div
+                                        className="ant-space ant-space-horizontal ant-space-align-start sc-bczRLJ fhjZjv"
+                                        style={Object {}}
+                                      >
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={0}
+                                          key="ant-space-item-0"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={
+                                              Object {
+                                                "marginRight": 24,
+                                              }
+                                            }
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-hKMtZM fLacXp"
+                                              >
+                                                <Text
+                                                  label="Stadium:"
+                                                  level={1}
+                                                  strong={false}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={false}
+                                                    title="Stadium:"
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi bKjELr"
+                                                      title="Stadium:"
+                                                    >
+                                                      Stadium:
+                                                    </span>
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={1}
+                                          key="ant-space-item-1"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={Object {}}
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-dkzDqf ivXJUi"
+                                              >
+                                                <Text
+                                                  level={1}
+                                                  strong={true}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={true}
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi iywsax"
+                                                    />
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                      </div>
+                                    </Space>
+                                  </Styled(Space)>
+                                </Space>
+                              </DisplayBox>
+                            </div>
+                          </Item>
+                          <Item
+                            className="ant-space-item"
+                            direction="vertical"
+                            index={1}
+                            key="ant-space-item-1"
+                            marginDirection="marginRight"
+                            wrap={false}
+                          >
+                            <div
+                              className="ant-space-item"
+                              style={
+                                Object {
+                                  "marginBottom": 16,
+                                }
+                              }
+                            >
+                              <DisplayBox
+                                label="Capacity:"
+                                minWidth="100px"
+                              >
+                                <Space
+                                  align="start"
+                                  direction="horizontal"
+                                  size="large"
+                                >
+                                  <Styled(Space)
+                                    align="start"
+                                    direction="horizontal"
+                                    size="large"
+                                  >
+                                    <Space
+                                      align="start"
+                                      className="sc-bczRLJ fhjZjv"
+                                      direction="horizontal"
+                                      size="large"
+                                    >
+                                      <div
+                                        className="ant-space ant-space-horizontal ant-space-align-start sc-bczRLJ fhjZjv"
+                                        style={Object {}}
+                                      >
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={0}
+                                          key="ant-space-item-0"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={
+                                              Object {
+                                                "marginRight": 24,
+                                              }
+                                            }
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-hKMtZM fLacXp"
+                                              >
+                                                <Text
+                                                  label="Capacity:"
+                                                  level={1}
+                                                  strong={false}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={false}
+                                                    title="Capacity:"
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi bKjELr"
+                                                      title="Capacity:"
+                                                    >
+                                                      Capacity:
+                                                    </span>
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={1}
+                                          key="ant-space-item-1"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={Object {}}
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-dkzDqf ivXJUi"
+                                              >
+                                                <Text
+                                                  level={1}
+                                                  strong={true}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={true}
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi iywsax"
+                                                    />
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                      </div>
+                                    </Space>
+                                  </Styled(Space)>
+                                </Space>
+                              </DisplayBox>
+                            </div>
+                          </Item>
+                          <Item
+                            className="ant-space-item"
+                            direction="vertical"
+                            index={2}
+                            key="ant-space-item-2"
+                            marginDirection="marginRight"
+                            wrap={false}
+                          >
+                            <div
+                              className="ant-space-item"
+                              style={
+                                Object {
+                                  "marginBottom": 16,
+                                }
+                              }
+                            >
+                              <DisplayBox
+                                label="Address:"
+                                minWidth="100px"
+                              >
+                                <Space
+                                  align="start"
+                                  direction="horizontal"
+                                  size="large"
+                                >
+                                  <Styled(Space)
+                                    align="start"
+                                    direction="horizontal"
+                                    size="large"
+                                  >
+                                    <Space
+                                      align="start"
+                                      className="sc-bczRLJ fhjZjv"
+                                      direction="horizontal"
+                                      size="large"
+                                    >
+                                      <div
+                                        className="ant-space ant-space-horizontal ant-space-align-start sc-bczRLJ fhjZjv"
+                                        style={Object {}}
+                                      >
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={0}
+                                          key="ant-space-item-0"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={
+                                              Object {
+                                                "marginRight": 24,
+                                              }
+                                            }
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-hKMtZM fLacXp"
+                                              >
+                                                <Text
+                                                  label="Address:"
+                                                  level={1}
+                                                  strong={false}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={false}
+                                                    title="Address:"
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi bKjELr"
+                                                      title="Address:"
+                                                    >
+                                                      Address:
+                                                    </span>
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={1}
+                                          key="ant-space-item-1"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={Object {}}
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-dkzDqf ivXJUi"
+                                              >
+                                                <Text
+                                                  level={1}
+                                                  strong={true}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={true}
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi iywsax"
+                                                    />
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                      </div>
+                                    </Space>
+                                  </Styled(Space)>
+                                </Space>
+                              </DisplayBox>
+                            </div>
+                          </Item>
+                          <Item
+                            className="ant-space-item"
+                            direction="vertical"
+                            index={3}
+                            key="ant-space-item-3"
+                            marginDirection="marginRight"
+                            wrap={false}
+                          >
+                            <div
+                              className="ant-space-item"
+                              style={Object {}}
+                            >
+                              <DisplayBox
+                                label="Surface:"
+                                minWidth="100px"
+                              >
+                                <Space
+                                  align="start"
+                                  direction="horizontal"
+                                  size="large"
+                                >
+                                  <Styled(Space)
+                                    align="start"
+                                    direction="horizontal"
+                                    size="large"
+                                  >
+                                    <Space
+                                      align="start"
+                                      className="sc-bczRLJ fhjZjv"
+                                      direction="horizontal"
+                                      size="large"
+                                    >
+                                      <div
+                                        className="ant-space ant-space-horizontal ant-space-align-start sc-bczRLJ fhjZjv"
+                                        style={Object {}}
+                                      >
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={0}
+                                          key="ant-space-item-0"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={
+                                              Object {
+                                                "marginRight": 24,
+                                              }
+                                            }
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-hKMtZM fLacXp"
+                                              >
+                                                <Text
+                                                  label="Surface:"
+                                                  level={1}
+                                                  strong={false}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={false}
+                                                    title="Surface:"
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi bKjELr"
+                                                      title="Surface:"
+                                                    >
+                                                      Surface:
+                                                    </span>
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                        <Item
+                                          className="ant-space-item"
+                                          direction="horizontal"
+                                          index={1}
+                                          key="ant-space-item-1"
+                                          marginDirection="marginRight"
+                                          wrap={false}
+                                        >
+                                          <div
+                                            className="ant-space-item"
+                                            style={Object {}}
+                                          >
+                                            <styled.div>
+                                              <div
+                                                className="sc-dkzDqf ivXJUi"
+                                              >
+                                                <Text
+                                                  level={1}
+                                                  strong={true}
+                                                  underline={false}
+                                                >
+                                                  <styled.span
+                                                    level={1}
+                                                    strong={true}
+                                                    underline={false}
+                                                  >
+                                                    <span
+                                                      className="sc-gsnTZi iywsax"
+                                                    />
+                                                  </styled.span>
+                                                </Text>
+                                              </div>
+                                            </styled.div>
+                                          </div>
+                                        </Item>
+                                      </div>
+                                    </Space>
+                                  </Styled(Space)>
+                                </Space>
+                              </DisplayBox>
+                            </div>
+                          </Item>
+                        </div>
+                      </Space>
+                    </Styled(Space)>
+                  </Space>
+                </Styled(Space)>
+              </div>
+            </Item>
+          </div>
+        </Space>
+      </Styled(Space)>
+    </Space>
+  </Styled(Space)>
+</TeamInformation>
+`;
