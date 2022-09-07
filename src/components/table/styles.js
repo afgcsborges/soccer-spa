@@ -1,7 +1,6 @@
 import AntdTable from 'antd/lib/table'
 import styled from 'styled-components'
 
-/* istanbul ignore next */
 export const StyledTable = styled(AntdTable)`
     &&& {
         .ant-table-thead {

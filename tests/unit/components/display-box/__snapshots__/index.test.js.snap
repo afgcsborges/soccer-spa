@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot,label and value 1`] = `
+<Space
+  align="start"
+  direction="horizontal"
+  size="large"
+>
+  <styled.div>
+    <Text
+      label="SOME_LABEL"
+      level={1}
+      strong={false}
+      underline={false}
+    />
+  </styled.div>
+  <styled.div>
+    <Text
+      label="SOME_VALUE"
+      level={1}
+      strong={true}
+      underline={false}
+    />
+  </styled.div>
+</Space>
+`;

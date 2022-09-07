@@ -7,16 +7,9 @@ import AntdSelect from 'antd/lib/select'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const getHeight = size => {
-    if (size === 'large') return '40px'
-    if (size === 'middle') return '32px'
-    return '32px'
-}
-
-/* istanbul ignore next */
 const StyledSelect = styled(AntdSelect)`
     width: 80%;
-    height: ${props => getHeight(props.size)};
+    height: ${props => props.size === 'large' ? '40px' : '32px'};
     &&&.ant-select {
         min-width: 50px;
         outline: none;
@@ -98,7 +91,7 @@ export const SelectDropDownStyle = `
     background-color: #BFBFBF !important;
 }
 `
-/* istanbul ignore next */
+
 const StyledDropdown = createGlobalStyle`
     ${SelectDropDownStyle}
 `
