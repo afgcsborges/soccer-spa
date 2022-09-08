@@ -62,10 +62,40 @@ yarn start
 If using npm:
 
 ```
-npm start
+npm run start
 ```
 
 Navigate to http://localhost:3000 and start using the app.
+
+<br/>
+
+### Run the prokject on docker (optional):
+
+Alternativly this project can also be run on docker
+
+If using yarn:
+Build docker image:
+
+```
+yarn docker:build
+```
+Run docker image
+```
+yarn docker:run
+```
+If using npm:
+
+Build docker image:
+
+```
+npm run docker:build
+```
+Run docker image
+```
+npm run docker:run
+```
+
+Navigate to http://localhost:8080 and start using the app.
 
 <br/>
 
@@ -81,7 +111,7 @@ yarn test
 If using npm:
 
 ```
-npm test
+npm run test
 ```
 
 Unit tests screenshots can be updated by adding the flag -u to any of the above comands.
