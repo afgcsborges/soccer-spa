@@ -1357,3 +1357,90 @@ export const teamData = {
         }
     }
 }
+
+export const leagueAndSeasonData = {
+    data: [
+        {
+            id: 271,
+            active: true,
+            type: 'domestic',
+            legacy_id: 43,
+            country_id: 320,
+            logo_path: 'https://cdn.sportmonks.com/images/soccer/leagues/271.png',
+            name: 'Superliga',
+            is_cup: false,
+            is_friendly: false,
+            current_season_id: 19686,
+            current_round_id: 274238,
+            current_stage_id: 77457696,
+            live_standings: true,
+            coverage: {
+                predictions: true,
+                topscorer_goals: true,
+                topscorer_assists: true,
+                topscorer_cards: true
+            },
+            seasons: {
+                data: [
+                    {
+                        id: 18334,
+                        name: '2021/2022',
+                        league_id: 271,
+                        is_current_season: false,
+                        current_round_id: null,
+                        current_stage_id: 77453565
+                    },
+                    {
+                        id: 77443802,
+                        name: '2022/2023',
+                        league_id: 271,
+                        is_current_season: true,
+                        current_round_id: 274238,
+                        current_stage_id: 77457696
+                    }
+                ]
+            }
+        },
+        {
+            id: 501,
+            active: true,
+            type: 'domestic',
+            legacy_id: 66,
+            country_id: 1161,
+            logo_path: 'https://cdn.sportmonks.com/images/soccer/leagues/501.png',
+            name: 'Premiership',
+            is_cup: false,
+            is_friendly: false,
+            current_season_id: 19735,
+            current_round_id: 274719,
+            current_stage_id: 77457866,
+            live_standings: true,
+            coverage: {
+                predictions: true,
+                topscorer_goals: true,
+                topscorer_assists: true,
+                topscorer_cards: true
+            },
+            seasons: {
+                data: [
+                    {
+                        id: 18369,
+                        name: '2021/2022',
+                        league_id: 501,
+                        is_current_season: false,
+                        current_round_id: null,
+                        current_stage_id: null
+                    },
+                    {
+                        id: 19735,
+                        name: '2022/2023',
+                        league_id: 501,
+                        is_current_season: true,
+                        current_round_id: 274719,
+                        current_stage_id: 77457866
+                    }
+                ]
+            }
+        }
+    ]
+}
