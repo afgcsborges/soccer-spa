@@ -1262,7 +1262,7 @@ export const teamData = {
                 {
                     player_id: 37407422,
                     position_id: 2,
-                    number: 27,
+                    number: null,
                     captain: 0,
                     injured: false,
                     minutes: 212,

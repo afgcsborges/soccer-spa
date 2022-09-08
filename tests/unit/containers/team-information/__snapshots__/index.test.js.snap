@@ -299,7 +299,7 @@ exports[`Team Information container tests should render container correctly 1`] 
             "interceptions": 2,
             "lineups": 2,
             "minutes": 212,
-            "number": 27,
+            "number": null,
             "owngoals": null,
             "passes": Object {
               "accuracy": 69,

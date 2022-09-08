@@ -1,6 +1,5 @@
 import { mount, shallow } from 'enzyme'
 
-/* eslint-disable no-unused-vars */
 import React from 'react'
 import TeamInformation from 'containers/team-information'
 import { act } from '@testing-library/react'
