@@ -13,6 +13,8 @@ exports[`Select component tests should have correct disabled true 1`] = `
   <Styled(Component)
     allowClear={true}
     disabled={true}
+    filterOption={false}
+    optionFilterProp="label"
     placeholder=""
     showArrow={true}
     showSearch={false}
@@ -22,6 +24,8 @@ exports[`Select component tests should have correct disabled true 1`] = `
       allowClear={true}
       className="sc-bczRLJ fzjfla"
       disabled={true}
+      filterOption={false}
+      optionFilterProp="label"
       placeholder=""
       showArrow={true}
       showSearch={false}
@@ -33,6 +37,7 @@ exports[`Select component tests should have correct disabled true 1`] = `
         clearIcon={<ForwardRef(CloseCircleFilled) />}
         disabled={true}
         dropdownClassName=""
+        filterOption={false}
         inputIcon={[Function]}
         listHeight={256}
         listItemHeight={24}
@@ -42,6 +47,7 @@ exports[`Select component tests should have correct disabled true 1`] = `
             [Function]
           </Context.Consumer>
         }
+        optionFilterProp="label"
         placeholder=""
         placement="bottomLeft"
         prefixCls="ant-select"
@@ -588,6 +594,8 @@ exports[`Select component tests should have correct size middle 1`] = `
   <Styled(Component)
     allowClear={true}
     disabled={false}
+    filterOption={false}
+    optionFilterProp="label"
     placeholder=""
     showArrow={true}
     showSearch={false}
@@ -597,6 +605,8 @@ exports[`Select component tests should have correct size middle 1`] = `
       allowClear={true}
       className="sc-bczRLJ buikYC"
       disabled={false}
+      filterOption={false}
+      optionFilterProp="label"
       placeholder=""
       showArrow={true}
       showSearch={false}
@@ -608,6 +618,7 @@ exports[`Select component tests should have correct size middle 1`] = `
         clearIcon={<ForwardRef(CloseCircleFilled) />}
         disabled={false}
         dropdownClassName=""
+        filterOption={false}
         inputIcon={[Function]}
         listHeight={256}
         listItemHeight={24}
@@ -617,6 +628,7 @@ exports[`Select component tests should have correct size middle 1`] = `
             [Function]
           </Context.Consumer>
         }
+        optionFilterProp="label"
         placeholder=""
         placement="bottomLeft"
         prefixCls="ant-select"
@@ -1144,6 +1156,8 @@ exports[`Select component tests should render select correctly with default prop
   <Styled(Component)
     allowClear={true}
     disabled={false}
+    filterOption={false}
+    optionFilterProp="label"
     placeholder=""
     showArrow={true}
     showSearch={false}
@@ -1171,6 +1185,8 @@ exports[`Select component tests should render select correctly with given props 
   <Styled(Component)
     allowClear={false}
     disabled={true}
+    filterOption={true}
+    optionFilterProp="label"
     placeholder="SOME_PLACEHOLDER"
     showArrow={true}
     showSearch={true}

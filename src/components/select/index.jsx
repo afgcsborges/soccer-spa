@@ -108,6 +108,8 @@ const Select = ({ allowClear, options, size, placeholder, disabled, value, onCha
             onChange={onChange}
             showArrow={true}
             showSearch={showSearch}
+            optionFilterProp={'label'}
+            filterOption={showSearch}
         >
             {options.map(({ label, key }) => (
                 <StyledSelect.Option key={key} label={label}>
