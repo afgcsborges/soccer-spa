@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+# Soccer Single Page Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Single page application using react and [Sportsmonk API](https://www.sportmonks.com//)
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+# How to run the project
 
-### `npm start`
+These instructions will get you a copy of the project up and running on your local machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Required Software**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   [Git](https://git-scm.com/)
+-   [NodeJS (> 16.15.0)](https://nodejs.org/en/download/current/)
+-   [Visual Studio Code](https://code.visualstudio.com/) or other code editor.
+-   [Yarn](https://https://yarnpkg.com//) (optional).
 
-### `npm test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installing and Running the project
 
-### `npm run build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone the repository to your local machine either with:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone git@github.com:afgcsborges/soccer-spa.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+or
 
-### `npm run eject`
+```
+git clone https://github.com/afgcsborges/soccer-spa.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Run the install command from the project root:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If using yarn:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+yarn install
+```
+If using npm:
 
-## Learn More
+```
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+It will instal all needed Project dependencies.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br/>
 
-### Code Splitting
+### Run the start command from the project root:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If using yarn:
 
-### Analyzing the Bundle Size
+```
+yarn start
+```
+If using npm:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+npm start
+```
 
-### Making a Progressive Web App
+Navigate to http://localhost:3000 and start using the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br/>
 
-### Advanced Configuration
+## Running the tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To run unit tests, run the command:
 
-### Deployment
+If using yarn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+yarn test
+```
+If using npm:
 
-### `npm run build` fails to minify
+```
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Unit tests screenshots can be updated by adding the flag -u to any of the above comands.
+
+Example:
+```
+yarn test -u
+```
+
+Coverage threshold:
+```
+{
+    branches: 100,
+    functions: 100,
+    lines: 100,
+    statements: 100
+}
+```
+
+
+<br>
+
+# Using the application
+
+**App Features**
+
+-   Allow users to select from available legues
+-   Allow users to select from available seasons from currently selected league
+-   Allow users to select from available stages from currently selected season
+-   Display standings information from selected: League -> Season -> Stage
+-   Display top scorers information from selected: League -> Season -> Stage
+-   Toggle between standings and top scorers
+-   Every table column across the application is sortable
+-   Clicking on a team name at the standings table will display the team players and team information
+-   Clicking on a player name either at the top scorers table or at the team players table will display the player profile
+
+Note: API key can be changed in the .env file on the project root.
+
+Althought the application has not been tested with another key besides the provided one, it should work properly if the data received is consistent.
+
+<br>
+
+**App Usage**
+
+After running the instructions of "How to run the project" described above:
+-   Select a league from the available leagues
+    - Selected league can be changed anytime we are viewing the standings/top scorers
+    - You can type any text on the league select to filter the select options
+-   Most recent season will be selected by default after a league is selected or changed
+    - Change season if you want to see other season standings/top scorers 
+-   First stage received will be selected by default after a season is selected or changed
+    - Change stage if you want to see other stage standings/top scorers
+-   Use the toggle to change between standings and top scorers view
+-   While viewing the league standings, click on any team name to display the team information and team squad
+    - Click the "Back to standings" button to navigate back to the standings/top scorers view
+-   While viewing the league top scorers, click on any player name to display the player profile
+    - Click on the "Close" button to close the player profile.
+-   While viewing the team information, click on any player name to display the player profile
+    - Click on the "Close" button to close the player profile.
+-   Click on any column acroos the aplication to sort
+    - First click sorts ascending
+    - Second clikc sorts descending
+    - Third click cancels sorting
+-   League and Season selects can be cleared byt hovering on the and clicking the cross icon that appears
