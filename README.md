@@ -146,3 +146,10 @@ After running the instructions of "How to run the project" described above:
     - Second clikc sorts descending
     - Third click cancels sorting
 -   League and Season selects can be cleared byt hovering on the and clicking the cross icon that appears
+
+
+**Demo**
+
+https://user-images.githubusercontent.com/68897001/189165076-bc5de5f1-33c7-4e4e-8b88-32a35d3229d0.mov
+
+
