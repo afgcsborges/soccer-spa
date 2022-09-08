@@ -21,7 +21,7 @@ const mapLeagueRows = (data, isGroup) =>
         position: isGroup
             ? `${get(leagueRow, 'group_name')} | ${get(leagueRow, 'position')}`
             : get(leagueRow, 'position'),
-        positionSorter: leagueRow.position,
+        positionSorter: get(leagueRow,'position'),
         scored: get(leagueRow, 'overall.goals_scored'),
         teamId: get(leagueRow, 'team_id'),
         teamName: get(leagueRow, 'team_name'),
@@ -61,6 +61,7 @@ const mapTopScorersData = (groupedGoalScorers, assistsScorers, stage) => {
             playerId,
             playerName: get(player, 'player.data.display_name', ''),
             position: get(player, 'position'),
+            positionSorter: get(player,'position'),
             teamId: get(player, 'team_id', ''),
             teamName: get(player, 'player.data.team.data.name', '')
         }
