@@ -6,7 +6,9 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
-    "test": "node tests/unit/test.js --unit"
+    "test": "node tests/unit/test.js --unit",
+    "docker:build": "docker build . -t soccer:latest",
+    "docker:run": "docker run -p 8080:8080 soccer:latest"
   },
   "browserslist": {
     "production": [
