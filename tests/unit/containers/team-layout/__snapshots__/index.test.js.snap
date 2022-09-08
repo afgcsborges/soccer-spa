@@ -1495,6 +1495,9 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                       Object {
                                                         "float": "left",
                                                         "marginBottom": "10px",
+                                                        "maxHeight": "100%",
+                                                        "maxWidth": "100%",
+                                                        "objectFit": "contain",
                                                       }
                                                     }
                                                     width={150}
@@ -1563,6 +1566,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                 label="Team Name:"
                                                                 minWidth="100px"
                                                                 textAlign="start"
+                                                                value="-"
                                                               >
                                                                 <Space
                                                                   align="start"
@@ -1645,6 +1649,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                 className="sc-gKXOVf gKTrFb"
                                                                               >
                                                                                 <Text
+                                                                                  label="-"
                                                                                   level={1}
                                                                                   strong={true}
                                                                                   underline={false}
@@ -1652,11 +1657,15 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                   <styled.span
                                                                                     level={1}
                                                                                     strong={true}
+                                                                                    title="-"
                                                                                     underline={false}
                                                                                   >
                                                                                     <span
                                                                                       className="sc-jSMfEi gdsLna"
-                                                                                    />
+                                                                                      title="-"
+                                                                                    >
+                                                                                      -
+                                                                                    </span>
                                                                                   </styled.span>
                                                                                 </Text>
                                                                               </div>
@@ -1690,6 +1699,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                 label="Short Code:"
                                                                 minWidth="100px"
                                                                 textAlign="start"
+                                                                value="-"
                                                               >
                                                                 <Space
                                                                   align="start"
@@ -1772,6 +1782,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                 className="sc-gKXOVf gKTrFb"
                                                                               >
                                                                                 <Text
+                                                                                  label="-"
                                                                                   level={1}
                                                                                   strong={true}
                                                                                   underline={false}
@@ -1779,11 +1790,15 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                   <styled.span
                                                                                     level={1}
                                                                                     strong={true}
+                                                                                    title="-"
                                                                                     underline={false}
                                                                                   >
                                                                                     <span
                                                                                       className="sc-jSMfEi gdsLna"
-                                                                                    />
+                                                                                      title="-"
+                                                                                    >
+                                                                                      -
+                                                                                    </span>
                                                                                   </styled.span>
                                                                                 </Text>
                                                                               </div>
@@ -1817,6 +1832,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                 label="Country:"
                                                                 minWidth="100px"
                                                                 textAlign="start"
+                                                                value="-"
                                                               >
                                                                 <Space
                                                                   align="start"
@@ -1899,6 +1915,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                 className="sc-gKXOVf gKTrFb"
                                                                               >
                                                                                 <Text
+                                                                                  label="-"
                                                                                   level={1}
                                                                                   strong={true}
                                                                                   underline={false}
@@ -1906,11 +1923,15 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                   <styled.span
                                                                                     level={1}
                                                                                     strong={true}
+                                                                                    title="-"
                                                                                     underline={false}
                                                                                   >
                                                                                     <span
                                                                                       className="sc-jSMfEi gdsLna"
-                                                                                    />
+                                                                                      title="-"
+                                                                                    >
+                                                                                      -
+                                                                                    </span>
                                                                                   </styled.span>
                                                                                 </Text>
                                                                               </div>
@@ -1940,6 +1961,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                 label="Year Founded:"
                                                                 minWidth="100px"
                                                                 textAlign="start"
+                                                                value="-"
                                                               >
                                                                 <Space
                                                                   align="start"
@@ -2022,6 +2044,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                 className="sc-gKXOVf gKTrFb"
                                                                               >
                                                                                 <Text
+                                                                                  label="-"
                                                                                   level={1}
                                                                                   strong={true}
                                                                                   underline={false}
@@ -2029,11 +2052,15 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                   <styled.span
                                                                                     level={1}
                                                                                     strong={true}
+                                                                                    title="-"
                                                                                     underline={false}
                                                                                   >
                                                                                     <span
                                                                                       className="sc-jSMfEi gdsLna"
-                                                                                    />
+                                                                                      title="-"
+                                                                                    >
+                                                                                      -
+                                                                                    </span>
                                                                                   </styled.span>
                                                                                 </Text>
                                                                               </div>
@@ -2080,6 +2107,9 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                       Object {
                                                         "float": "left",
                                                         "marginBottom": "10px",
+                                                        "maxHeight": "100%",
+                                                        "maxWidth": "100%",
+                                                        "objectFit": "contain",
                                                       }
                                                     }
                                                     width={150}
@@ -2143,6 +2173,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                               <DisplayBox
                                                                 label="Stadium:"
                                                                 minWidth="100px"
+                                                                value="-"
                                                               >
                                                                 <Space
                                                                   align="start"
@@ -2225,6 +2256,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                 className="sc-gKXOVf gKTrFb"
                                                                               >
                                                                                 <Text
+                                                                                  label="-"
                                                                                   level={1}
                                                                                   strong={true}
                                                                                   underline={false}
@@ -2232,11 +2264,15 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                   <styled.span
                                                                                     level={1}
                                                                                     strong={true}
+                                                                                    title="-"
                                                                                     underline={false}
                                                                                   >
                                                                                     <span
                                                                                       className="sc-jSMfEi gdsLna"
-                                                                                    />
+                                                                                      title="-"
+                                                                                    >
+                                                                                      -
+                                                                                    </span>
                                                                                   </styled.span>
                                                                                 </Text>
                                                                               </div>
@@ -2269,6 +2305,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                               <DisplayBox
                                                                 label="Capacity:"
                                                                 minWidth="100px"
+                                                                value="-"
                                                               >
                                                                 <Space
                                                                   align="start"
@@ -2351,6 +2388,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                 className="sc-gKXOVf gKTrFb"
                                                                               >
                                                                                 <Text
+                                                                                  label="-"
                                                                                   level={1}
                                                                                   strong={true}
                                                                                   underline={false}
@@ -2358,11 +2396,15 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                   <styled.span
                                                                                     level={1}
                                                                                     strong={true}
+                                                                                    title="-"
                                                                                     underline={false}
                                                                                   >
                                                                                     <span
                                                                                       className="sc-jSMfEi gdsLna"
-                                                                                    />
+                                                                                      title="-"
+                                                                                    >
+                                                                                      -
+                                                                                    </span>
                                                                                   </styled.span>
                                                                                 </Text>
                                                                               </div>
@@ -2395,6 +2437,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                               <DisplayBox
                                                                 label="Address:"
                                                                 minWidth="100px"
+                                                                value="-"
                                                               >
                                                                 <Space
                                                                   align="start"
@@ -2477,6 +2520,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                 className="sc-gKXOVf gKTrFb"
                                                                               >
                                                                                 <Text
+                                                                                  label="-"
                                                                                   level={1}
                                                                                   strong={true}
                                                                                   underline={false}
@@ -2484,11 +2528,15 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                   <styled.span
                                                                                     level={1}
                                                                                     strong={true}
+                                                                                    title="-"
                                                                                     underline={false}
                                                                                   >
                                                                                     <span
                                                                                       className="sc-jSMfEi gdsLna"
-                                                                                    />
+                                                                                      title="-"
+                                                                                    >
+                                                                                      -
+                                                                                    </span>
                                                                                   </styled.span>
                                                                                 </Text>
                                                                               </div>
@@ -2517,6 +2565,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                               <DisplayBox
                                                                 label="Surface:"
                                                                 minWidth="100px"
+                                                                value="-"
                                                               >
                                                                 <Space
                                                                   align="start"
@@ -2599,6 +2648,7 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                 className="sc-gKXOVf gKTrFb"
                                                                               >
                                                                                 <Text
+                                                                                  label="-"
                                                                                   level={1}
                                                                                   strong={true}
                                                                                   underline={false}
@@ -2606,11 +2656,15 @@ exports[`Team Layout container tests should render data correctly 1`] = `
                                                                                   <styled.span
                                                                                     level={1}
                                                                                     strong={true}
+                                                                                    title="-"
                                                                                     underline={false}
                                                                                   >
                                                                                     <span
                                                                                       className="sc-jSMfEi gdsLna"
-                                                                                    />
+                                                                                      title="-"
+                                                                                    >
+                                                                                      -
+                                                                                    </span>
                                                                                   </styled.span>
                                                                                 </Text>
                                                                               </div>

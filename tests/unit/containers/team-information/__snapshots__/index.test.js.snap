@@ -1,7 +1,374 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Team Information container tests should render data correctly 1`] = `
-<TeamInformation>
+exports[`Team Information container tests should render container correctly 1`] = `
+<TeamInformation
+  teamData={
+    Object {
+      "country": Object {
+        "data": Object {
+          "id": 320,
+          "name": "Denmark",
+        },
+      },
+      "country_id": 320,
+      "current_season_id": 19686,
+      "founded": 2003,
+      "id": 2394,
+      "is_placeholder": false,
+      "legacy_id": null,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/26/2394.png",
+      "name": "Nordsjælland",
+      "national_team": false,
+      "short_code": "FCN",
+      "squad": Object {
+        "data": Array [
+          Object {
+            "appearences": null,
+            "assists": null,
+            "blocks": null,
+            "captain": 0,
+            "cleansheets": 0,
+            "crosses": Object {
+              "accurate": null,
+              "total": null,
+            },
+            "dispossesed": null,
+            "dribbles": Object {
+              "attempts": null,
+              "dribbled_past": null,
+              "success": null,
+            },
+            "duels": Object {
+              "total": null,
+              "won": null,
+            },
+            "fouls": Object {
+              "committed": null,
+              "drawn": null,
+            },
+            "goals": null,
+            "hit_post": null,
+            "injured": false,
+            "inside_box_saves": null,
+            "interceptions": null,
+            "lineups": null,
+            "minutes": null,
+            "number": 31,
+            "owngoals": null,
+            "passes": Object {
+              "accuracy": null,
+              "key_passes": null,
+              "total": null,
+            },
+            "penalties": Object {
+              "committed": null,
+              "missed": null,
+              "saves": null,
+              "scores": null,
+              "won": null,
+            },
+            "player": Object {
+              "data": Object {
+                "birthcountry": "Denmark",
+                "birthdate": "26/01/2003",
+                "birthplace": null,
+                "common_name": "A. Pedersen",
+                "country_id": 320,
+                "display_name": "Andreas Pedersen",
+                "firstname": "Andreas Gülstorff",
+                "fullname": "Andreas Gülstorff Pedersen",
+                "height": null,
+                "image_path": "https://cdn.sportmonks.com/images/soccer/players/7/37324999.png",
+                "lastname": "Pedersen",
+                "nationality": "Denmark",
+                "player_id": 37324999,
+                "position_id": 1,
+                "team_id": 2394,
+                "weight": null,
+              },
+            },
+            "player_id": 37324999,
+            "position_id": 1,
+            "rating": null,
+            "redcards": null,
+            "saves": null,
+            "shots": Object {
+              "shots_off_target": null,
+              "shots_on_target": null,
+              "shots_total": null,
+            },
+            "substitute_in": null,
+            "substitute_out": null,
+            "substitutes_on_bench": 8,
+            "tackles": null,
+            "yellowcards": null,
+            "yellowred": null,
+          },
+          Object {
+            "appearences": 7,
+            "assists": null,
+            "blocks": 5,
+            "captain": 1,
+            "cleansheets": 3,
+            "crosses": Object {
+              "accurate": null,
+              "total": 3,
+            },
+            "dispossesed": 1,
+            "dribbles": Object {
+              "attempts": 1,
+              "dribbled_past": 2,
+              "success": 1,
+            },
+            "duels": Object {
+              "total": 36,
+              "won": 18,
+            },
+            "fouls": Object {
+              "committed": 3,
+              "drawn": 1,
+            },
+            "goals": null,
+            "hit_post": null,
+            "injured": false,
+            "inside_box_saves": null,
+            "interceptions": 4,
+            "lineups": 7,
+            "minutes": 620,
+            "number": 4,
+            "owngoals": null,
+            "passes": Object {
+              "accuracy": 86,
+              "key_passes": 3,
+              "total": 538,
+            },
+            "penalties": Object {
+              "committed": null,
+              "missed": null,
+              "saves": null,
+              "scores": null,
+              "won": null,
+            },
+            "player": Object {
+              "data": Object {
+                "birthcountry": "Denmark",
+                "birthdate": "03/03/1989",
+                "birthplace": null,
+                "common_name": "K. Hansen",
+                "country_id": 320,
+                "display_name": "Kian Hansen",
+                "firstname": "Kian",
+                "fullname": "Kian Hansen",
+                "height": "184 cm",
+                "image_path": "https://cdn.sportmonks.com/images/soccer/players/7/83495.png",
+                "lastname": "Hansen",
+                "nationality": "Denmark",
+                "player_id": 83495,
+                "position_id": 2,
+                "team_id": 2394,
+                "weight": "74 kg",
+              },
+            },
+            "player_id": 83495,
+            "position_id": 2,
+            "rating": "7.07",
+            "redcards": null,
+            "saves": null,
+            "shots": Object {
+              "shots_off_target": null,
+              "shots_on_target": null,
+              "shots_total": 2,
+            },
+            "substitute_in": null,
+            "substitute_out": 1,
+            "substitutes_on_bench": 1,
+            "tackles": 4,
+            "yellowcards": 1,
+            "yellowred": null,
+          },
+          Object {
+            "appearences": 7,
+            "assists": null,
+            "blocks": 2,
+            "captain": 0,
+            "cleansheets": 2,
+            "crosses": Object {
+              "accurate": 5,
+              "total": 11,
+            },
+            "dispossesed": 3,
+            "dribbles": Object {
+              "attempts": 9,
+              "dribbled_past": 10,
+              "success": 7,
+            },
+            "duels": Object {
+              "total": 51,
+              "won": 26,
+            },
+            "fouls": Object {
+              "committed": 4,
+              "drawn": 3,
+            },
+            "goals": null,
+            "hit_post": null,
+            "injured": false,
+            "inside_box_saves": null,
+            "interceptions": 8,
+            "lineups": 7,
+            "minutes": 630,
+            "number": 23,
+            "owngoals": null,
+            "passes": Object {
+              "accuracy": 71,
+              "key_passes": 4,
+              "total": 274,
+            },
+            "penalties": Object {
+              "committed": null,
+              "missed": null,
+              "saves": null,
+              "scores": null,
+              "won": null,
+            },
+            "player": Object {
+              "data": Object {
+                "birthcountry": "Denmark",
+                "birthdate": "16/11/2001",
+                "birthplace": null,
+                "common_name": "O. Villadsen",
+                "country_id": 320,
+                "display_name": "Oliver Marc Rose-Villadsen",
+                "firstname": "Oliver",
+                "fullname": "Oliver Villadsen",
+                "height": null,
+                "image_path": "https://cdn.sportmonks.com/images/soccer/players/26/37259994.png",
+                "lastname": "Villadsen",
+                "nationality": "Denmark",
+                "player_id": 37259994,
+                "position_id": 4,
+                "team_id": 2394,
+                "weight": null,
+              },
+            },
+            "player_id": 37259994,
+            "position_id": 2,
+            "rating": "6.73",
+            "redcards": null,
+            "saves": null,
+            "shots": Object {
+              "shots_off_target": null,
+              "shots_on_target": null,
+              "shots_total": 1,
+            },
+            "substitute_in": null,
+            "substitute_out": null,
+            "substitutes_on_bench": null,
+            "tackles": 12,
+            "yellowcards": 2,
+            "yellowred": 1,
+          },
+          Object {
+            "appearences": 7,
+            "assists": null,
+            "blocks": null,
+            "captain": 0,
+            "cleansheets": 2,
+            "crosses": Object {
+              "accurate": null,
+              "total": 3,
+            },
+            "dispossesed": 2,
+            "dribbles": Object {
+              "attempts": null,
+              "dribbled_past": null,
+              "success": null,
+            },
+            "duels": Object {
+              "total": 19,
+              "won": 10,
+            },
+            "fouls": Object {
+              "committed": 5,
+              "drawn": 1,
+            },
+            "goals": null,
+            "hit_post": null,
+            "injured": false,
+            "inside_box_saves": null,
+            "interceptions": 2,
+            "lineups": 2,
+            "minutes": 212,
+            "number": 27,
+            "owngoals": null,
+            "passes": Object {
+              "accuracy": 69,
+              "key_passes": null,
+              "total": 126,
+            },
+            "penalties": Object {
+              "committed": null,
+              "missed": null,
+              "saves": null,
+              "scores": null,
+              "won": null,
+            },
+            "player": Object {
+              "data": Object {
+                "birthcountry": "Sweden",
+                "birthdate": "12/02/2002",
+                "birthplace": null,
+                "common_name": "D. Svensson",
+                "country_id": 47,
+                "display_name": "D. Svensson",
+                "firstname": "Daniel",
+                "fullname": "Daniel Svensson",
+                "height": null,
+                "image_path": "https://cdn.sportmonks.com/images/soccer/players/30/37407422.png",
+                "lastname": "Svensson",
+                "nationality": "Sweden",
+                "player_id": 37407422,
+                "position_id": 2,
+                "team_id": 2394,
+                "weight": null,
+              },
+            },
+            "player_id": 37407422,
+            "position_id": 2,
+            "rating": "6.69",
+            "redcards": null,
+            "saves": null,
+            "shots": Object {
+              "shots_off_target": null,
+              "shots_on_target": null,
+              "shots_total": 1,
+            },
+            "substitute_in": 5,
+            "substitute_out": 1,
+            "substitutes_on_bench": 6,
+            "tackles": 7,
+            "yellowcards": null,
+            "yellowred": null,
+          },
+        ],
+      },
+      "twitter": null,
+      "venue": Object {
+        "data": Object {
+          "address": "Idrætsvænget 2",
+          "capacity": 10100,
+          "city": "Farum",
+          "coordinates": "55.816125,12.352792",
+          "id": 1436,
+          "image_path": "https://cdn.sportmonks.com/images/soccer/venues/28/1436.png",
+          "name": "Right to Dream Park",
+          "surface": "grass",
+        },
+      },
+      "venue_id": 1436,
+    }
+  }
+>
   <Styled(Space)
     direction="horizontal"
   >
@@ -44,15 +411,18 @@ exports[`Team Information container tests should render data correctly 1`] = `
                 }
               >
                 <Image
-                  src=""
+                  src="https://cdn.sportmonks.com/images/soccer/teams/26/2394.png"
                   width={150}
                 >
                   <img
-                    src="https://media.istockphoto.com/vectors/image-unavailable-icon-vector-id1206575314?k=20&m=1206575314&s=170667a&w=0&h=ioRmz6_fwuW0bETWDp9JZIZdv-YayKXTdtGmjgB5pnI="
+                    src="https://cdn.sportmonks.com/images/soccer/teams/26/2394.png"
                     style={
                       Object {
                         "float": "left",
                         "marginBottom": "10px",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "objectFit": "contain",
                       }
                     }
                     width={150}
@@ -121,6 +491,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                 label="Team Name:"
                                 minWidth="100px"
                                 textAlign="start"
+                                value="Nordsjælland"
                               >
                                 <Space
                                   align="start"
@@ -203,6 +574,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                 className="sc-dkzDqf ivXJUi"
                                               >
                                                 <Text
+                                                  label="Nordsjælland"
                                                   level={1}
                                                   strong={true}
                                                   underline={false}
@@ -210,11 +582,15 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                   <styled.span
                                                     level={1}
                                                     strong={true}
+                                                    title="Nordsjælland"
                                                     underline={false}
                                                   >
                                                     <span
                                                       className="sc-gsnTZi iywsax"
-                                                    />
+                                                      title="Nordsjælland"
+                                                    >
+                                                      Nordsjælland
+                                                    </span>
                                                   </styled.span>
                                                 </Text>
                                               </div>
@@ -248,6 +624,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                 label="Short Code:"
                                 minWidth="100px"
                                 textAlign="start"
+                                value="FCN"
                               >
                                 <Space
                                   align="start"
@@ -330,6 +707,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                 className="sc-dkzDqf ivXJUi"
                                               >
                                                 <Text
+                                                  label="FCN"
                                                   level={1}
                                                   strong={true}
                                                   underline={false}
@@ -337,11 +715,15 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                   <styled.span
                                                     level={1}
                                                     strong={true}
+                                                    title="FCN"
                                                     underline={false}
                                                   >
                                                     <span
                                                       className="sc-gsnTZi iywsax"
-                                                    />
+                                                      title="FCN"
+                                                    >
+                                                      FCN
+                                                    </span>
                                                   </styled.span>
                                                 </Text>
                                               </div>
@@ -375,6 +757,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                 label="Country:"
                                 minWidth="100px"
                                 textAlign="start"
+                                value="Denmark"
                               >
                                 <Space
                                   align="start"
@@ -457,6 +840,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                 className="sc-dkzDqf ivXJUi"
                                               >
                                                 <Text
+                                                  label="Denmark"
                                                   level={1}
                                                   strong={true}
                                                   underline={false}
@@ -464,11 +848,15 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                   <styled.span
                                                     level={1}
                                                     strong={true}
+                                                    title="Denmark"
                                                     underline={false}
                                                   >
                                                     <span
                                                       className="sc-gsnTZi iywsax"
-                                                    />
+                                                      title="Denmark"
+                                                    >
+                                                      Denmark
+                                                    </span>
                                                   </styled.span>
                                                 </Text>
                                               </div>
@@ -498,6 +886,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                 label="Year Founded:"
                                 minWidth="100px"
                                 textAlign="start"
+                                value={2003}
                               >
                                 <Space
                                   align="start"
@@ -580,6 +969,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                 className="sc-dkzDqf ivXJUi"
                                               >
                                                 <Text
+                                                  label={2003}
                                                   level={1}
                                                   strong={true}
                                                   underline={false}
@@ -587,11 +977,15 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                   <styled.span
                                                     level={1}
                                                     strong={true}
+                                                    title={2003}
                                                     underline={false}
                                                   >
                                                     <span
                                                       className="sc-gsnTZi iywsax"
-                                                    />
+                                                      title={2003}
+                                                    >
+                                                      2003
+                                                    </span>
                                                   </styled.span>
                                                 </Text>
                                               </div>
@@ -629,15 +1023,18 @@ exports[`Team Information container tests should render data correctly 1`] = `
                 }
               >
                 <Image
-                  src=""
+                  src="https://cdn.sportmonks.com/images/soccer/venues/28/1436.png"
                   width={150}
                 >
                   <img
-                    src="https://media.istockphoto.com/vectors/image-unavailable-icon-vector-id1206575314?k=20&m=1206575314&s=170667a&w=0&h=ioRmz6_fwuW0bETWDp9JZIZdv-YayKXTdtGmjgB5pnI="
+                    src="https://cdn.sportmonks.com/images/soccer/venues/28/1436.png"
                     style={
                       Object {
                         "float": "left",
                         "marginBottom": "10px",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "objectFit": "contain",
                       }
                     }
                     width={150}
@@ -701,6 +1098,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                               <DisplayBox
                                 label="Stadium:"
                                 minWidth="100px"
+                                value="Right to Dream Park"
                               >
                                 <Space
                                   align="start"
@@ -783,6 +1181,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                 className="sc-dkzDqf ivXJUi"
                                               >
                                                 <Text
+                                                  label="Right to Dream Park"
                                                   level={1}
                                                   strong={true}
                                                   underline={false}
@@ -790,11 +1189,15 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                   <styled.span
                                                     level={1}
                                                     strong={true}
+                                                    title="Right to Dream Park"
                                                     underline={false}
                                                   >
                                                     <span
                                                       className="sc-gsnTZi iywsax"
-                                                    />
+                                                      title="Right to Dream Park"
+                                                    >
+                                                      Right to Dream Park
+                                                    </span>
                                                   </styled.span>
                                                 </Text>
                                               </div>
@@ -827,6 +1230,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                               <DisplayBox
                                 label="Capacity:"
                                 minWidth="100px"
+                                value={10100}
                               >
                                 <Space
                                   align="start"
@@ -909,6 +1313,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                 className="sc-dkzDqf ivXJUi"
                                               >
                                                 <Text
+                                                  label={10100}
                                                   level={1}
                                                   strong={true}
                                                   underline={false}
@@ -916,11 +1321,15 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                   <styled.span
                                                     level={1}
                                                     strong={true}
+                                                    title={10100}
                                                     underline={false}
                                                   >
                                                     <span
                                                       className="sc-gsnTZi iywsax"
-                                                    />
+                                                      title={10100}
+                                                    >
+                                                      10100
+                                                    </span>
                                                   </styled.span>
                                                 </Text>
                                               </div>
@@ -953,6 +1362,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                               <DisplayBox
                                 label="Address:"
                                 minWidth="100px"
+                                value="Idrætsvænget 2"
                               >
                                 <Space
                                   align="start"
@@ -1035,6 +1445,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                 className="sc-dkzDqf ivXJUi"
                                               >
                                                 <Text
+                                                  label="Idrætsvænget 2"
                                                   level={1}
                                                   strong={true}
                                                   underline={false}
@@ -1042,11 +1453,15 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                   <styled.span
                                                     level={1}
                                                     strong={true}
+                                                    title="Idrætsvænget 2"
                                                     underline={false}
                                                   >
                                                     <span
                                                       className="sc-gsnTZi iywsax"
-                                                    />
+                                                      title="Idrætsvænget 2"
+                                                    >
+                                                      Idrætsvænget 2
+                                                    </span>
                                                   </styled.span>
                                                 </Text>
                                               </div>
@@ -1075,6 +1490,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                               <DisplayBox
                                 label="Surface:"
                                 minWidth="100px"
+                                value="grass"
                               >
                                 <Space
                                   align="start"
@@ -1157,6 +1573,7 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                 className="sc-dkzDqf ivXJUi"
                                               >
                                                 <Text
+                                                  label="grass"
                                                   level={1}
                                                   strong={true}
                                                   underline={false}
@@ -1164,11 +1581,15 @@ exports[`Team Information container tests should render data correctly 1`] = `
                                                   <styled.span
                                                     level={1}
                                                     strong={true}
+                                                    title="grass"
                                                     underline={false}
                                                   >
                                                     <span
                                                       className="sc-gsnTZi iywsax"
-                                                    />
+                                                      title="grass"
+                                                    >
+                                                      grass
+                                                    </span>
                                                   </styled.span>
                                                 </Text>
                                               </div>
@@ -1195,4 +1616,71 @@ exports[`Team Information container tests should render data correctly 1`] = `
     </Space>
   </Styled(Space)>
 </TeamInformation>
+`;
+
+exports[`Team Information container tests should render container correctly with empty teamData 1`] = `
+<Styled(Space)
+  direction="horizontal"
+>
+  <Image
+    src=""
+    width={150}
+  />
+  <Styled(Space)
+    direction="vertical"
+  >
+    <DisplayBox
+      label="Team Name:"
+      minWidth="100px"
+      textAlign="start"
+      value="-"
+    />
+    <DisplayBox
+      label="Short Code:"
+      minWidth="100px"
+      textAlign="start"
+      value="-"
+    />
+    <DisplayBox
+      label="Country:"
+      minWidth="100px"
+      textAlign="start"
+      value="-"
+    />
+    <DisplayBox
+      label="Year Founded:"
+      minWidth="100px"
+      textAlign="start"
+      value="-"
+    />
+  </Styled(Space)>
+  <Image
+    src=""
+    width={150}
+  />
+  <Styled(Space)
+    direction="vertical"
+  >
+    <DisplayBox
+      label="Stadium:"
+      minWidth="100px"
+      value="-"
+    />
+    <DisplayBox
+      label="Capacity:"
+      minWidth="100px"
+      value="-"
+    />
+    <DisplayBox
+      label="Address:"
+      minWidth="100px"
+      value="-"
+    />
+    <DisplayBox
+      label="Surface:"
+      minWidth="100px"
+      value="-"
+    />
+  </Styled(Space)>
+</Styled(Space)>
 `;

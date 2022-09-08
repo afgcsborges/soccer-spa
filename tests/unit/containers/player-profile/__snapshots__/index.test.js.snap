@@ -56,6 +56,9 @@ exports[`Palyer Profile container tests should render data correctly 1`] = `
                             Object {
                               "float": "left",
                               "marginBottom": "10px",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "objectFit": "contain",
                             }
                           }
                           width="100%"
@@ -1294,6 +1297,9 @@ exports[`Palyer Profile container tests should render data with - 1`] = `
                             Object {
                               "float": "left",
                               "marginBottom": "10px",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "objectFit": "contain",
                             }
                           }
                           width="100%"
@@ -2532,6 +2538,9 @@ exports[`Palyer Profile container tests should trigger onClose 1`] = `
                             Object {
                               "float": "left",
                               "marginBottom": "10px",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "objectFit": "contain",
                             }
                           }
                           width="100%"

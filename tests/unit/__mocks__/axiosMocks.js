@@ -990,3 +990,370 @@ export const topScorersData = {
         }
     }
 }
+
+export const teamData = {
+    data: {
+        id: 2394,
+        legacy_id: null,
+        name: 'Nordsjælland',
+        short_code: 'FCN',
+        twitter: null,
+        country_id: 320,
+        national_team: false,
+        founded: 2003,
+        logo_path: 'https://cdn.sportmonks.com/images/soccer/teams/26/2394.png',
+        venue_id: 1436,
+        current_season_id: 19686,
+        is_placeholder: false,
+        country: {
+            data: {
+                id: 320,
+                name: 'Denmark'
+            }
+        },
+        squad: {
+            data: [
+                {
+                    player_id: 37324999,
+                    position_id: 1,
+                    number: 31,
+                    captain: 0,
+                    injured: false,
+                    minutes: null,
+                    appearences: null,
+                    lineups: null,
+                    substitute_in: null,
+                    substitute_out: null,
+                    substitutes_on_bench: 8,
+                    goals: null,
+                    owngoals: null,
+                    assists: null,
+                    saves: null,
+                    inside_box_saves: null,
+                    dispossesed: null,
+                    interceptions: null,
+                    yellowcards: null,
+                    yellowred: null,
+                    redcards: null,
+                    tackles: null,
+                    blocks: null,
+                    hit_post: null,
+                    cleansheets: 0,
+                    rating: null,
+                    fouls: {
+                        committed: null,
+                        drawn: null
+                    },
+                    crosses: {
+                        total: null,
+                        accurate: null
+                    },
+                    dribbles: {
+                        attempts: null,
+                        success: null,
+                        dribbled_past: null
+                    },
+                    duels: {
+                        total: null,
+                        won: null
+                    },
+                    passes: {
+                        total: null,
+                        accuracy: null,
+                        key_passes: null
+                    },
+                    penalties: {
+                        won: null,
+                        scores: null,
+                        missed: null,
+                        committed: null,
+                        saves: null
+                    },
+                    shots: {
+                        shots_total: null,
+                        shots_on_target: null,
+                        shots_off_target: null
+                    },
+                    player: {
+                        data: {
+                            player_id: 37324999,
+                            team_id: 2394,
+                            country_id: 320,
+                            position_id: 1,
+                            common_name: 'A. Pedersen',
+                            display_name: 'Andreas Pedersen',
+                            fullname: 'Andreas Gülstorff Pedersen',
+                            firstname: 'Andreas Gülstorff',
+                            lastname: 'Pedersen',
+                            nationality: 'Denmark',
+                            birthdate: '26/01/2003',
+                            birthcountry: 'Denmark',
+                            birthplace: null,
+                            height: null,
+                            weight: null,
+                            image_path: 'https://cdn.sportmonks.com/images/soccer/players/7/37324999.png'
+                        }
+                    }
+                },
+                {
+                    player_id: 83495,
+                    position_id: 2,
+                    number: 4,
+                    captain: 1,
+                    injured: false,
+                    minutes: 620,
+                    appearences: 7,
+                    lineups: 7,
+                    substitute_in: null,
+                    substitute_out: 1,
+                    substitutes_on_bench: 1,
+                    goals: null,
+                    owngoals: null,
+                    assists: null,
+                    saves: null,
+                    inside_box_saves: null,
+                    dispossesed: 1,
+                    interceptions: 4,
+                    yellowcards: 1,
+                    yellowred: null,
+                    redcards: null,
+                    tackles: 4,
+                    blocks: 5,
+                    hit_post: null,
+                    cleansheets: 3,
+                    rating: '7.07',
+                    fouls: {
+                        committed: 3,
+                        drawn: 1
+                    },
+                    crosses: {
+                        total: 3,
+                        accurate: null
+                    },
+                    dribbles: {
+                        attempts: 1,
+                        success: 1,
+                        dribbled_past: 2
+                    },
+                    duels: {
+                        total: 36,
+                        won: 18
+                    },
+                    passes: {
+                        total: 538,
+                        accuracy: 86,
+                        key_passes: 3
+                    },
+                    penalties: {
+                        won: null,
+                        scores: null,
+                        missed: null,
+                        committed: null,
+                        saves: null
+                    },
+                    shots: {
+                        shots_total: 2,
+                        shots_on_target: null,
+                        shots_off_target: null
+                    },
+                    player: {
+                        data: {
+                            player_id: 83495,
+                            team_id: 2394,
+                            country_id: 320,
+                            position_id: 2,
+                            common_name: 'K. Hansen',
+                            display_name: 'Kian Hansen',
+                            fullname: 'Kian Hansen',
+                            firstname: 'Kian',
+                            lastname: 'Hansen',
+                            nationality: 'Denmark',
+                            birthdate: '03/03/1989',
+                            birthcountry: 'Denmark',
+                            birthplace: null,
+                            height: '184 cm',
+                            weight: '74 kg',
+                            image_path: 'https://cdn.sportmonks.com/images/soccer/players/7/83495.png'
+                        }
+                    }
+                },
+                {
+                    player_id: 37259994,
+                    position_id: 2,
+                    number: 23,
+                    captain: 0,
+                    injured: false,
+                    minutes: 630,
+                    appearences: 7,
+                    lineups: 7,
+                    substitute_in: null,
+                    substitute_out: null,
+                    substitutes_on_bench: null,
+                    goals: null,
+                    owngoals: null,
+                    assists: null,
+                    saves: null,
+                    inside_box_saves: null,
+                    dispossesed: 3,
+                    interceptions: 8,
+                    yellowcards: 2,
+                    yellowred: 1,
+                    redcards: null,
+                    tackles: 12,
+                    blocks: 2,
+                    hit_post: null,
+                    cleansheets: 2,
+                    rating: '6.73',
+                    fouls: {
+                        committed: 4,
+                        drawn: 3
+                    },
+                    crosses: {
+                        total: 11,
+                        accurate: 5
+                    },
+                    dribbles: {
+                        attempts: 9,
+                        success: 7,
+                        dribbled_past: 10
+                    },
+                    duels: {
+                        total: 51,
+                        won: 26
+                    },
+                    passes: {
+                        total: 274,
+                        accuracy: 71,
+                        key_passes: 4
+                    },
+                    penalties: {
+                        won: null,
+                        scores: null,
+                        missed: null,
+                        committed: null,
+                        saves: null
+                    },
+                    shots: {
+                        shots_total: 1,
+                        shots_on_target: null,
+                        shots_off_target: null
+                    },
+                    player: {
+                        data: {
+                            player_id: 37259994,
+                            team_id: 2394,
+                            country_id: 320,
+                            position_id: 4,
+                            common_name: 'O. Villadsen',
+                            display_name: 'Oliver Marc Rose-Villadsen',
+                            fullname: 'Oliver Villadsen',
+                            firstname: 'Oliver',
+                            lastname: 'Villadsen',
+                            nationality: 'Denmark',
+                            birthdate: '16/11/2001',
+                            birthcountry: 'Denmark',
+                            birthplace: null,
+                            height: null,
+                            weight: null,
+                            image_path: 'https://cdn.sportmonks.com/images/soccer/players/26/37259994.png'
+                        }
+                    }
+                },
+                {
+                    player_id: 37407422,
+                    position_id: 2,
+                    number: 27,
+                    captain: 0,
+                    injured: false,
+                    minutes: 212,
+                    appearences: 7,
+                    lineups: 2,
+                    substitute_in: 5,
+                    substitute_out: 1,
+                    substitutes_on_bench: 6,
+                    goals: null,
+                    owngoals: null,
+                    assists: null,
+                    saves: null,
+                    inside_box_saves: null,
+                    dispossesed: 2,
+                    interceptions: 2,
+                    yellowcards: null,
+                    yellowred: null,
+                    redcards: null,
+                    tackles: 7,
+                    blocks: null,
+                    hit_post: null,
+                    cleansheets: 2,
+                    rating: '6.69',
+                    fouls: {
+                        committed: 5,
+                        drawn: 1
+                    },
+                    crosses: {
+                        total: 3,
+                        accurate: null
+                    },
+                    dribbles: {
+                        attempts: null,
+                        success: null,
+                        dribbled_past: null
+                    },
+                    duels: {
+                        total: 19,
+                        won: 10
+                    },
+                    passes: {
+                        total: 126,
+                        accuracy: 69,
+                        key_passes: null
+                    },
+                    penalties: {
+                        won: null,
+                        scores: null,
+                        missed: null,
+                        committed: null,
+                        saves: null
+                    },
+                    shots: {
+                        shots_total: 1,
+                        shots_on_target: null,
+                        shots_off_target: null
+                    },
+                    player: {
+                        data: {
+                            player_id: 37407422,
+                            team_id: 2394,
+                            country_id: 47,
+                            position_id: 2,
+                            common_name: 'D. Svensson',
+                            display_name: 'D. Svensson',
+                            fullname: 'Daniel Svensson',
+                            firstname: 'Daniel',
+                            lastname: 'Svensson',
+                            nationality: 'Sweden',
+                            birthdate: '12/02/2002',
+                            birthcountry: 'Sweden',
+                            birthplace: null,
+                            height: null,
+                            weight: null,
+                            image_path: 'https://cdn.sportmonks.com/images/soccer/players/30/37407422.png'
+                        }
+                    }
+                }
+            ]
+        },
+        venue: {
+            data: {
+                id: 1436,
+                name: 'Right to Dream Park',
+                surface: 'grass',
+                address: 'Idrætsvænget 2',
+                city: 'Farum',
+                capacity: 10100,
+                image_path: 'https://cdn.sportmonks.com/images/soccer/venues/28/1436.png',
+                coordinates: '55.816125,12.352792'
+            }
+        }
+    }
+}

@@ -7,6 +7,9 @@ exports[`Image component tests should have correct src and width 1`] = `
     Object {
       "float": "left",
       "marginBottom": "10px",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "objectFit": "contain",
     }
   }
   width={200}
@@ -20,6 +23,9 @@ exports[`Image component tests should have no image src 1`] = `
     Object {
       "float": "left",
       "marginBottom": "10px",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "objectFit": "contain",
     }
   }
   width={150}
