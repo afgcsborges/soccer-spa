@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
+import Home from 'pages/home'
 import React from 'react'
-import TeamLayout from 'containers/team-layout'
 import { act } from '@testing-library/react'
 import axios from 'axios'
 import { mount } from 'enzyme'
@@ -10,15 +10,15 @@ import { waitStateUpdate } from '../../__mocks__/utils'
 jest.mock('axios')
 
 axios.get.mockImplementation(url => {
-    if (url === 'https://soccer.sportmonks.com/api/v2.0/teams/1?include=squad.player,venue,country') {
-        return Promise.resolve({ data: { data: {} } })
+    if (url === 'https://soccer.sportmonks.com/api/v2.0/leagues?include=seasons') {
+        return Promise.resolve({ data: { data: [] } })
     }
     return Promise.reject(new Error('Error'))
 })
 
-describe('Team Layout container tests', () => {
+describe('Home page tests', () => {
     it('should render data correctly', async () => {
-        const wrapper = mount(<TeamLayout teamId={1} />)
+        const wrapper = mount(<Home />)
 
         await act(async () => {
             await wrapper.update()
