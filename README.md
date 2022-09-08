@@ -91,6 +91,17 @@ Example:
 yarn test -u
 ```
 
+Coverage threshold:
+```
+{
+    branches: 100,
+    functions: 100,
+    lines: 100,
+    statements: 100
+}
+```
+
+
 <br>
 
 # Using the application
