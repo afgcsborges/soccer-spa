@@ -49,7 +49,7 @@ const Home = ({ apiKey }) => {
     useEffect(() => {
         if (isEmpty(seasonOptions)) setSelectedSeason(null)
         else {
-            setSelectedSeason(`${seasonOptions[FIRST_ELEMENT].key}` || null)
+            setSelectedSeason(`${seasonOptions[FIRST_ELEMENT].key}`)
         }
     }, [seasonOptions])
 

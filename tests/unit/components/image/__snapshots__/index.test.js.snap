@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image component tests should have correct src and width 1`] = `
+<img
+  src="SOME_SRC"
+  style={
+    Object {
+      "float": "left",
+      "marginBottom": "10px",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "objectFit": "contain",
+    }
+  }
+  width={200}
+/>
+`;
+
+exports[`Image component tests should have no image src 1`] = `
+<img
+  src="https://media.istockphoto.com/vectors/image-unavailable-icon-vector-id1206575314?k=20&m=1206575314&s=170667a&w=0&h=ioRmz6_fwuW0bETWDp9JZIZdv-YayKXTdtGmjgB5pnI="
+  style={
+    Object {
+      "float": "left",
+      "marginBottom": "10px",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "objectFit": "contain",
+    }
+  }
+  width={150}
+/>
+`;

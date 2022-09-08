@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component tests should match snapshot if no level passed 1`] = `
+<Text
+  label="no level"
+  level={null}
+  strong={false}
+  underline={false}
+>
+  <styled.span
+    level={null}
+    strong={false}
+    title="no level"
+    underline={false}
+  >
+    <span
+      className="sc-bczRLJ Yipxl"
+      title="no level"
+    >
+      no level
+    </span>
+  </styled.span>
+</Text>
+`;
+
+exports[`Text component tests should match snapshot level 1 1`] = `
+<Text
+  label="level 1"
+  level={1}
+  strong={false}
+  underline={false}
+>
+  <styled.span
+    level={1}
+    strong={false}
+    title="level 1"
+    underline={false}
+  >
+    <span
+      className="sc-bczRLJ Yipxl"
+      title="level 1"
+    >
+      level 1
+    </span>
+  </styled.span>
+</Text>
+`;
+
+exports[`Text component tests should match snapshot level 2 1`] = `
+<Text
+  label="level 2"
+  level={2}
+  strong={false}
+  underline={false}
+>
+  <styled.span
+    level={2}
+    strong={false}
+    title="level 2"
+    underline={false}
+  >
+    <span
+      className="sc-bczRLJ OVqzp"
+      title="level 2"
+    >
+      level 2
+    </span>
+  </styled.span>
+</Text>
+`;
+
+exports[`Text component tests should match snapshot level 3 1`] = `
+<Text
+  label="level 3"
+  level={3}
+  strong={false}
+  underline={false}
+>
+  <styled.span
+    level={3}
+    strong={false}
+    title="level 3"
+    underline={false}
+  >
+    <span
+      className="sc-bczRLJ jOFPme"
+      title="level 3"
+    >
+      level 3
+    </span>
+  </styled.span>
+</Text>
+`;
+
+exports[`Text component tests should match snapshot with strong and underlined and min width 1`] = `
+<Text
+  label="SOME_LABEL"
+  level={1}
+  minWidth="100px"
+  strong={true}
+  underline={true}
+>
+  <styled.span
+    level={1}
+    minWidth="100px"
+    strong={true}
+    title="SOME_LABEL"
+    underline={true}
+  >
+    <span
+      className="sc-bczRLJ kOfvim"
+      title="SOME_LABEL"
+    >
+      <u>
+        SOME_LABEL
+      </u>
+    </span>
+  </styled.span>
+</Text>
+`;

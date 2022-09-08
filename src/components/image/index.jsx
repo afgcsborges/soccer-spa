@@ -4,7 +4,7 @@ import { isEmpty } from 'lodash'
 
 const Image = ({ src, width }) => (
     <img
-        style={{ float: 'left', marginBottom: '10px' }}
+        style={{ float: 'left', marginBottom: '10px', maxHeight: '100%', maxWidth: '100%', objectFit: 'contain' }}
         width={width}
         src={
             isEmpty(src)

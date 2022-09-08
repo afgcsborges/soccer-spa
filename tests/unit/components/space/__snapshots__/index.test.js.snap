@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Space component tests should match snapshot with default props 1`] = `
+<Styled(Space)
+  align="start"
+  direction="horizontal"
+  size="middle"
+/>
+`;
+
+exports[`Space component tests should match snapshot with given props 1`] = `
+<Styled(Space)
+  align="end"
+  direction="vertical"
+  size="large"
+/>
+`;

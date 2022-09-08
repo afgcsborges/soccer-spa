@@ -45,17 +45,27 @@ const TeamInformation = ({ teamData }) => {
         <StyledSpace direction={'horizontal'}>
             <Image src={teamLogo} />
             <StyledSpace direction={'vertical'}>
-                <DisplayBox label={'Team Name:'} value={teamInfo.name} minWidth={'100px'} textAlign="start" />
-                <DisplayBox label={'Short Code:'} value={teamInfo.shortCode} minWidth={'100px'} textAlign="start" />
-                <DisplayBox label={'Country:'} value={teamInfo.country} minWidth={'100px'} textAlign="start" />
-                <DisplayBox label={'Year Founded:'} value={teamInfo.yearFounded} minWidth={'100px'} textAlign="start" />
+                <DisplayBox label={'Team Name:'} value={teamInfo.name || '-'} minWidth={'100px'} textAlign="start" />
+                <DisplayBox
+                    label={'Short Code:'}
+                    value={teamInfo.shortCode || '-'}
+                    minWidth={'100px'}
+                    textAlign="start"
+                />
+                <DisplayBox label={'Country:'} value={teamInfo.country || '-'} minWidth={'100px'} textAlign="start" />
+                <DisplayBox
+                    label={'Year Founded:'}
+                    value={teamInfo.yearFounded || '-'}
+                    minWidth={'100px'}
+                    textAlign="start"
+                />
             </StyledSpace>
             <Image src={venueImage} />
             <StyledSpace direction={'vertical'}>
-                <DisplayBox label={'Stadium:'} value={teamInfo.venueName} minWidth={'100px'} />
-                <DisplayBox label={'Capacity:'} value={teamInfo.venueCapacity} minWidth={'100px'} />
-                <DisplayBox label={'Address:'} value={teamInfo.venueAddress} minWidth={'100px'} />
-                <DisplayBox label={'Surface:'} value={teamInfo.venueSurface} minWidth={'100px'} />
+                <DisplayBox label={'Stadium:'} value={teamInfo.venueName || '-'} minWidth={'100px'} />
+                <DisplayBox label={'Capacity:'} value={teamInfo.venueCapacity || '-'} minWidth={'100px'} />
+                <DisplayBox label={'Address:'} value={teamInfo.venueAddress || '-'} minWidth={'100px'} />
+                <DisplayBox label={'Surface:'} value={teamInfo.venueSurface || '-'} minWidth={'100px'} />
             </StyledSpace>
         </StyledSpace>
     )

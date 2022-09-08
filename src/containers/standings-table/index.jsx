@@ -12,7 +12,7 @@ const ZERO = 0
 
 const mapLeagueRows = (data, isGroup) =>
     data.map(leagueRow => ({
-        difference: get(leagueRow, 'total.goal_difference') || ZERO,
+        difference: get(leagueRow, 'total.goal_difference'),
         draw: get(leagueRow, 'overall.draw'),
         goal: `${get(leagueRow, 'overall.goals_scored')}-${get(leagueRow, 'overall.goals_against')}`,
         lost: get(leagueRow, 'overall.lost'),
@@ -28,11 +28,11 @@ const mapLeagueRows = (data, isGroup) =>
         won: get(leagueRow, 'overall.won')
     }))
 const mapStandingsData = (data, selectedStage) => {
-    const stageData =
-        get(
-            data?.find(stage => `${stage.id}` === selectedStage),
-            'standings.data'
-        ) || []
+    const stageData = get(
+        data?.find(stage => `${stage.id}` === selectedStage),
+        'standings.data',
+        []
+    )
     if (isEmpty(stageData)) return []
     if (stageData[ZERO].resource === 'group') {
         const result = []
@@ -142,7 +142,7 @@ const StandingsTable = ({ handlePlayerNameClick, handleTeamNameClick, standingsD
             columns={getTopScorersColumns(handlePlayerNameClick)}
             dataSource={getTopScorers()}
             emptyText="No results to show."
-            rowKey={toggle ? 'key' : 'position'}
+            rowKey={'key'}
             header={getTableHeader}
             footer={() => ''}
         />
@@ -151,7 +151,7 @@ const StandingsTable = ({ handlePlayerNameClick, handleTeamNameClick, standingsD
             columns={getStandingsColumns(handleTeamNameClick)}
             dataSource={getStandings()}
             emptyText="No results to show."
-            rowKey={toggle ? 'key' : 'position'}
+            rowKey={'position'}
             header={getTableHeader}
             footer={() => ''}
         />

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch component tests Should match snapshot without onChange 1`] = `
+<Space
+  align="center"
+  direction="horizontal"
+  size="middle"
+>
+  <Styled(Switch)
+    onChange={[Function]}
+  />
+</Space>
+`;
+
+exports[`Switch component tests Should toggle switch on click 1`] = `
+<Space
+  align="center"
+  direction="horizontal"
+  size="middle"
+>
+  <Text
+    label="Unchecked"
+    level={1}
+    minWidth="100px"
+    strong={false}
+    underline={false}
+  />
+  <Styled(Switch)
+    checked={true}
+    onChange={[Function]}
+  />
+  <Text
+    label="Checked"
+    level={1}
+    minWidth="100px"
+    strong={true}
+    underline={false}
+  />
+</Space>
+`;
+
+exports[`Switch component tests Should toggle switch on click without labels 1`] = `
+<Space
+  align="center"
+  direction="horizontal"
+  size="middle"
+>
+  <Styled(Switch)
+    checked={true}
+    onChange={[Function]}
+  />
+</Space>
+`;
